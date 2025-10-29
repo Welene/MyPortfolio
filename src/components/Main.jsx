@@ -161,7 +161,7 @@ function Main() {
 									href="https://github.com/welene"
 									target="_blank">
 									<lord-icon
-										src="/Portfolio/animated/git-ani.json"
+										src="./animated/git-ani.json"
 										trigger="hover"
 										style={{
 											width: '70px',
@@ -178,7 +178,7 @@ function Main() {
 									href="https://moisaart.picflow.com/59p9zhzt82"
 									target="_blank">
 									<lord-icon
-										src="/Portfolio/animated/draw-ani.json"
+										src="./animated/draw-ani.json"
 										trigger="hover"
 										style={{
 											width: '70px',
@@ -195,7 +195,7 @@ function Main() {
 									href="https://moisaart.picflow.com/xs2ltt0twg"
 									target="_blank">
 									<lord-icon
-										src="/Portfolio/animated/photo-ani.json"
+										src="./animated/photo-ani.json"
 										trigger="hover"
 										style={{
 											width: '70px',
@@ -231,7 +231,7 @@ function Main() {
 						<figure className="icon-container__contact">
 							<a href="mailto:yourname@email.com">
 								<lord-icon
-									src="/Portfolio/animated/email-ani.json"
+									src="./animated/email-ani.json"
 									trigger="hover"
 									style={{
 										width: '70px',
@@ -243,7 +243,7 @@ function Main() {
 								href="https://www.instagram.com/helenetheodorsen/"
 								target="_blank">
 								<lord-icon
-									src="/Portfolio/animated/inst-ani.json"
+									src="./animated/inst-ani.json"
 									trigger="hover"
 									style={{
 										width: '70px',
@@ -255,7 +255,7 @@ function Main() {
 								href="https://www.linkedin.com/in/helene-theodorsen-645a20311/"
 								target="_blank">
 								<lord-icon
-									src="/Portfolio/animated/link-ani.json"
+									src="./animated/link-ani.json"
 									trigger="hover"
 									style={{
 										width: '70px',
