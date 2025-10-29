@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Londrina+Shadow&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #1a1a1a;
+	letter-spacing: 0.1rem;
+}
+
+html,
+body {
+	overflow-x: clip;
+}
+
+.intro_screen__title {
+	font-size: 2.5rem;
+	text-align: center;
+	font-family: Candal, serif;
+	border-radius: 0.3rem;
+	padding: 1rem;
+	margin-top: 20rem;
+	color: rgb(240, 240, 240);
+	overflow: hidden;
+	display: inline-block;
+	white-space: nowrap;
+	animation: typing-header 1.4s steps(26, end) forwards;
+	filter: drop-shadow(0 10px 4px rgba(0, 0, 0, 0.514));
+}
+
+.swoosh-text {
+	display: inline-block;
+	background: linear-gradient(
+		90deg,
+		#750a18,
+		#511479,
+		#511479,
+		#750a18,
+		#750a18,
+		#511479,
+		#511479,
+		#750a18
+	);
+	background-size: 300% 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient-flow 25s linear infinite;
+	filter: drop-shadow(0 10px 4px rgba(0, 0, 0, 0.514));
+	padding-top: 4rem;
+}
+
+@keyframes typing-header {
+	from {
+		width: 0;
+	}
+	to {
+		width: 27ch;
+	}
+}
+
+@keyframes gradient-flow {
+	0% {
+		background-position: 400% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.intro-section {
+	display: flex;
+	justify-content: center;
+}
+
+.parallax_wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.parallax_wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.parallax_wrapper > .stars-container {
+	pointer-events: none;
+	z-index: -1;
+}
+
+.star {
+	position: fixed;
+	pointer-events: none;
+	filter: drop-shadow(0 0px 4px rgba(255, 255, 255, 0.589));
+	width: 2px;
+	height: 2px;
+	background: rgb(247, 247, 247);
+	border-radius: 50%;
+	animation: twinkle infinite alternate;
+	z-index: -1;
+}
+
+@keyframes twinkle {
+	from {
+		opacity: 0.2;
+		transform: scale(1);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1.5);
+	}
+}
+
+main {
+	max-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	gap: 20rem;
+	overflow: visible;
+	position: relative;
+}
+
+.project-section {
+	width: 100%;
+	position: relative;
+}
+
+/* HEADER SECTION WITH PICTURE */
+.intro_screen {
+	position: relative;
+	height: 45rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('./assets/meg4.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.56));
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+		sans-serif;
+}
+
+/* HEADER CODING ICONS  */
+.intro-section__icons {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.parallax_group {
+	display: flex;
+	justify-content: center;
+}
+
+/* DESKTOP PROJECT */
+.mid_layer--over {
+	box-shadow: 8px 10px 16px hsla(0, 0%, 0%, 0.445),
+		-8px -10px 16px hsla(0, 0%, 0%, 0.445);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.6rem;
+	padding-bottom: 1rem;
+	height: 33rem;
+	width: 100%;
+	background: linear-gradient(to right, #c76617ad, #6439b3a6);
+	background: linear-gradient(to right, #750a18be, #501479be);
+}
+
+/* PHONE PROJECT */
+.mid_layer--under {
+	box-shadow: 8px 10px 16px hsla(0, 0%, 0%, 0.445),
+		-8px -10px 16px hsla(0, 0%, 0%, 0.445);
+	display: flex;
+	height: 50rem;
+	justify-content: center;
+	align-items: center;
+	padding: 1.6rem;
+	padding-bottom: 1rem;
+	width: 100%;
+	background: linear-gradient(to right, #c76617ad, #6439b3a6);
+	background: linear-gradient(to right, #750a18be, #501479be);
+}
+
+.parallax_group {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.mid_layer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15rem;
+}
+
+/* ANNET SECTION */
+.other-section {
+	box-shadow: 8px 16px 16px hsla(0, 0%, 0%, 0.445);
+	border-radius: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 18rem;
+	min-width: auto;
+	background: linear-gradient(to right, #c76617ad, #6439b3a6);
+	background: linear-gradient(to right, #750a18be, #501479be);
+}
+
+.other-section__heading {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+	font-size: 2rem;
+	font-style: bold;
+	color: rgb(241, 241, 241);
+	padding-bottom: 4rem;
+	filter: drop-shadow(0 6px 4px rgba(0, 0, 0, 0.384));
+}
+
+.other-section__txt {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+		sans-serif;
+	font-size: 1.3rem;
+	color: rgb(241, 241, 241);
+	filter: drop-shadow(0 6px 4px rgba(0, 0, 0, 0.384));
+}
+
+.icon-container__other {
+	width: 100%;
+	height: auto;
+	display: flex;
+	margin-left: 1.1rem;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.icon-container__icon--other {
+	width: 3rem;
+	height: 3rem;
+	transition: transform 0.5s ease;
+	cursor: pointer;
+	filter: drop-shadow(0 4px 4px rgba(34, 34, 34, 0.815));
+}
+
+.icon-container__icon--other:hover {
+	transform: scale(1.3);
+}
+
+.icon-container__icon--info {
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+	font-size: 1.2rem;
+	filter: drop-shadow(0 6px 4px rgba(0, 0, 0, 0.384));
+}
+
+/* KONTAKT SECTION */
+.contact-section {
+	box-shadow: 8px 16px 16px hsla(0, 0%, 0%, 0.445);
+	border-radius: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 18rem;
+
+	top: 3rem;
+	background: linear-gradient(to right, #c76617ad, #6439b3a6);
+	background: linear-gradient(to right, #750a18be, #501479be);
+	margin-bottom: 15rem;
+}
+
+.contact-section__heading {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+	font-size: 2rem;
+	font-style: bold;
+	color: rgb(241, 241, 241);
+	padding-bottom: 3rem;
+	filter: drop-shadow(0 6px 4px rgba(0, 0, 0, 0.384));
+}
+
+.contact-section__txt {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+		sans-serif;
+	font-size: 1.3rem;
+	margin-bottom: 1.5rem;
+	color: rgb(241, 241, 241);
+	filter: drop-shadow(0 6px 4px rgba(0, 0, 0, 0.384));
+}
+
+.icon-container__contact {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+/* // ----------------------------- BOTH */
+.article,
+.other-section,
+.contact-section {
+	width: 100%;
+	max-width: 55rem;
+	align-self: center;
+	padding-inline: 2rem;
+}
+
+lord-icon {
+	transition: transform 0.5s ease;
+	cursor: pointer;
+	filter: drop-shadow(0 4px 4px rgba(27, 27, 27, 0.815));
+}
+
+lord-icon:hover {
+	transform: scale(1.1);
+}
+
+/* FOOTER SECTION */
+.outro_screen {
+	height: 20rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-top: 10rem;
+	background-image: url('./assets/photos/mount3.png');
+	filter: drop-shadow(0px -15px 10px rgba(12, 12, 12, 0.768));
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.outro_screen-txt {
+	font-size: 1.2rem;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+		sans-serif;
+	margin-bottom: 2rem;
+	margin-right: 2rem;
+	filter: drop-shadow(0 10px 4px rgba(0, 0, 0, 0.966));
+	font-size: 1.1rem;
+	color: rgba(255, 255, 255, 0.877);
+}
+
+/* (tablets) */
+@media (max-width: 1024px) {
+	.article {
+		width: 100%;
+		max-width: 90%;
+		min-width: auto;
+	}
+
+	.intro_screen {
+		height: 35rem;
+	}
+
+	.intro_screen__title {
+		font-size: 2rem;
+		margin-top: 10rem;
+	}
+
+	.mid_layer--over {
+		height: auto;
+		flex-direction: column;
+		padding: 2rem;
+	}
+
+	.mid_layer--over .embla__slide {
+		max-width: 90%;
+	}
+
+	/* .other-section,
+	.contact-section {
+		width: 100%;
+		max-width: 55rem;
+		padding: 2rem;
+	} */
+
+	.infoContainer {
+		/* width: 100%; */
+		display: flex;
+		justify-content: center;
+	}
+
+	main {
+		gap: 10rem;
+	}
+}
+
+/* (phones) */
+@media (max-width: 768px) {
+	.intro_screen {
+		height: 28rem;
+		background-position: top;
+	}
+
+	.intro_screen__title {
+		font-size: 1.6rem;
+		margin-top: 8rem;
+		padding: 0.8rem;
+	}
+
+	.swoosh-text {
+		padding-top: 2rem;
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	.mid_layer--under {
+		height: auto;
+		padding: 1rem;
+	}
+
+	.mid_layer--under .embla__slide {
+		max-width: 90%;
+	}
+
+	.other-section,
+	.contact-section,
+	.article {
+		width: 100%;
+		max-width: 55rem;
+		min-height: auto;
+		padding: 2rem 1rem;
+	}
+
+	.other-section__heading,
+	.contact-section__heading {
+		font-size: 1.5rem;
+	}
+
+	.other-section__heading {
+		padding-bottom: 2rem;
+	}
+
+	.other-section__txt,
+	.contact-section__txt {
+		font-size: 1.1rem;
+	}
+
+	.icon-container__other,
+	.icon-container__contact {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	.icon-container__icon--other {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	.outro_screen {
+		height: 12rem;
+		background-position: bottom;
+	}
+
+	.outro_screen-txt {
+		font-size: 0.9rem;
+		margin: 1rem;
+	}
+}
+
+/* super small screens */
+@media (max-width: 480px) {
+	.article,
+	.other-section,
+	.contact-section {
+		width: 100%;
+		max-width: 80%;
+		align-self: center;
+		box-sizing: border-box;
+		padding-inline: 1rem;
+	}
+
+	.article {
+		margin-bottom: 5rem;
+	}
+
+	.mid_layer {
+		gap: 5rem;
+	}
+
+	.mid_layer--over {
+		margin-top: 2rem;
+	}
+
+	.mid_layer--under {
+		margin-top: 8rem;
+		margin-bottom: 7rem;
+	}
+
+	.intro_screen__title {
+		margin-top: 10rem;
+		white-space: normal;
+		padding: 5rem;
+		line-height: 1.3;
+	}
+
+	.swoosh-text {
+		font-size: 1.8rem;
+	}
+
+	.other-section__heading {
+		padding-bottom: 1.5rem;
+	}
+
+	.contact-section__heading {
+		padding-bottom: 1.5rem;
+	}
+
+	.icon-item {
+		margin-bottom: 1.5rem;
+	}
+
+	.icon-container__other {
+		margin: 0rem;
+	}
+
+	.other-section__txt,
+	.contact-section__txt {
+		font-size: 1rem;
+	}
+
+	.icon-container__icon--other {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.outro_screen {
+		margin-top: 2rem;
+	}
+
+	main {
+		gap: 3rem;
+	}
+}

@@ -1,0 +1,47 @@
+.top-layer .infoContainer {
+	border-radius: 0.3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.infoContainer > article {
+	padding: 3rem 3rem 3.5rem 3rem;
+}
+
+/* (tablets) */
+@media (max-width: 1024px) {
+	.top-layer .infoContainer {
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+
+	.infoContainer > article {
+		padding: 2.5rem 2rem 3rem 2rem;
+	}
+}
+
+/*  (phones) */
+@media (max-width: 768px) {
+	.top-layer .infoContainer {
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+	}
+
+	.infoContainer > article {
+		width: 100%;
+		padding: 2rem 1.5rem;
+	}
+}
+/* super small screens */
+@media (max-width: 480px) {
+	.top-layer .infoContainer {
+		padding: 0.5rem;
+		gap: 1rem;
+	}
+
+	.infoContainer > article {
+		padding: 1.5rem 1rem;
+	}
+}
