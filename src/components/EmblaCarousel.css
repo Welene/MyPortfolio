@@ -118,8 +118,22 @@
 		max-width: 180px;
 	}
 
-	.embla-desktop .embla__slide {
-		width: 6rem;
+	.embla-desktop {
+		width: 100%;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+	}
+
+	.embla-desktop .embla__viewport {
+		margin: 0 auto;
+		transform: none;
+	}
+
+	.embla-desktop .embla__dots {
+		margin: 1rem auto 0 auto;
+		transform: none;
 	}
 	.embla-phone .embla__slide {
 		width: 2rem;
@@ -135,13 +149,5 @@
 
 	.embla-desktop .embla__container {
 		gap: 0;
-	}
-
-	.embla-desktop .embla__viewport {
-		padding: 0 calc(var(--slide-spacing) - 2rem);
-	}
-
-	.embla-desktop .embla__slide:last-child {
-		padding: 0 calc(var(--slide-spacing) - 5rem);
 	}
 }

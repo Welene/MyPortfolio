@@ -296,4 +296,8 @@
 	.icon-container__icon {
 		width: 40px;
 	}
+
+	.icon-container {
+		gap: 2rem;
+	}
 }
