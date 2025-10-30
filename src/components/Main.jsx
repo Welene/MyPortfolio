@@ -1,23 +1,19 @@
 import Section from '../components/Section';
 import IconContainer from './IconContainer';
 
-// import Email from '../assets/contact/email.png';
-// import Instagram from '../assets/contact/instagram.png';
-// import Linkedin from '../assets/contact/linkedin.png';
-
-// import gitIcon from '../assets/icons/github.png';
-// import Photo from '../assets/icons/photo.png';
-// import Draw from '../assets/icons/draw.png';
-
 import EmblaCarousel from './EmblaCarousel';
 
 import project1 from '../assets/projects/1.png';
 import project2 from '../assets/projects/2.png';
-import project3 from '../assets/projects/3.png';
+// import project3 from '../assets/projects/3.png';
 import project4 from '../assets/projects/4.png';
 import project5 from '../assets/projects/5.png';
 import project6 from '../assets/projects/6.png';
 import project7 from '../assets/projects/1a.png';
+
+import project8 from '../assets/projects/NovaTech1.png';
+import project9 from '../assets/projects/NovaTech2.png';
+import project10 from '../assets/projects/NovaTech3.png';
 
 import projectA from '../assets/projects/a.png';
 import projectB from '../assets/projects/b.png';
@@ -31,11 +27,14 @@ const Spacer = ({ height = '1rem' }) => <div style={{ height }} />;
 const projectPhotosPhone = [
 	project1,
 	project2,
-	project3,
+	// project3,
 	project4,
 	project5,
 	project6,
 	project7,
+	project8,
+	project9,
+	project10,
 ];
 
 const projectPhotosDesktop = [projectA, projectB, projectC, projectD];
@@ -229,7 +228,7 @@ function Main() {
 						</article>
 
 						<figure className="icon-container__contact">
-							<a href="mailto:yourname@email.com">
+							<a href="mailto:helenetheo@live.no">
 								<lord-icon
 									src="./animated/email-ani.json"
 									trigger="hover"

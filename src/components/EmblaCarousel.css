@@ -92,6 +92,22 @@
 	.embla-phone .embla__slide {
 		width: 2.5rem;
 	}
+
+	.embla-phone .embla__slide:first-child {
+		margin-left: calc(var(--slide-spacing) + 1rem);
+	}
+
+	.embla-phone .embla__slide:last-child {
+		margin-right: calc(var(--slide-spacing) + 1rem);
+	}
+
+	.embla-desktop .embla__slide:first-child {
+		margin-left: calc(var(--slide-spacing) + 1rem);
+	}
+
+	.embla-desktop .embla__slide:last-child {
+		margin-right: calc(var(--slide-spacing) + 1rem);
+	}
 }
 
 @media (max-width: 480px) {
@@ -107,5 +123,25 @@
 	}
 	.embla-phone .embla__slide {
 		width: 2rem;
+	}
+
+	.embla-phone .embla__slide:first-child {
+		margin-left: calc(var(--slide-spacing) + 1rem);
+	}
+
+	.embla-phone .embla__slide:last-child {
+		margin-right: calc(var(--slide-spacing) + 1rem);
+	}
+
+	.embla-desktop .embla__container {
+		gap: 0;
+	}
+
+	.embla-desktop .embla__viewport {
+		padding: 0 calc(var(--slide-spacing) - 2rem);
+	}
+
+	.embla-desktop .embla__slide:last-child {
+		padding: 0 calc(var(--slide-spacing) - 5rem);
 	}
 }

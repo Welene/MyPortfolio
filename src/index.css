@@ -385,13 +385,6 @@ lord-icon:hover {
 		max-width: 90%;
 	}
 
-	/* .other-section,
-	.contact-section {
-		width: 100%;
-		max-width: 55rem;
-		padding: 2rem;
-	} */
-
 	.infoContainer {
 		/* width: 100%; */
 		display: flex;
@@ -418,7 +411,7 @@ lord-icon:hover {
 
 	.swoosh-text {
 		padding-top: 2rem;
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 		text-align: center;
 	}
 

@@ -37,3 +37,9 @@
 .arrow__up:hover {
 	transform: scale(1.2);
 }
+
+@media (max-width: 480px) {
+	.arrow__up {
+		right: 1rem;
+	}
+}
