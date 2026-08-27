@@ -19,6 +19,11 @@ import projectA from '../assets/projects/a.png';
 import projectB from '../assets/projects/b.png';
 import projectC from '../assets/projects/c.png';
 import projectD from '../assets/projects/d.png';
+import projectE from '../assets/projects/admin1.png';
+import projectF from '../assets/projects/admin2.png';
+import projectG from '../assets/projects/admin3.png';
+import projectI from '../assets/projects/admin5.png';
+import projectJ from '../assets/projects/admin1b.png';
 
 import { motion } from 'motion/react';
 
@@ -37,7 +42,17 @@ const projectPhotosPhone = [
 	project10,
 ];
 
-const projectPhotosDesktop = [projectA, projectB, projectC, projectD];
+const projectPhotosDesktop = [
+	projectE,
+	projectF,
+	projectG,
+	projectI,
+	projectJ,
+	projectA,
+	projectB,
+	projectC,
+	projectD,
+];
 
 function Main() {
 	return (
