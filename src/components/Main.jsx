@@ -65,8 +65,9 @@ function Main() {
 								Sverige i några år.
 								<Spacer height="1rem" />
 								Som en kreativ själ bestämde jag mig för att
-								börja på Frontendutbildningen hösten 2024, ett
-								val som var 100% rätt!
+								börja plugga Webbutveckling, ett val som var
+								100% rätt! Efter två år blev jag klar med
+								utbildningen i 2026.
 								<Spacer height="1rem" />
 								Jag är en positiv & glad person som gillar att
 								sprida glädje.
