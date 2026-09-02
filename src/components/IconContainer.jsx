@@ -12,6 +12,8 @@ import awsIcon from '../assets/icons/aws.png';
 import dynaIcon from '../assets/icons/dynamodb.png';
 import agileIcon from '../assets/icons/agile.png';
 import dockerIcon from '../assets/icons/docker.png';
+import azureIcon from '../assets/icons/azure.png';
+import typescriptIcon from '../assets/icons/typescript.png';
 
 function IconContainer() {
 	return (
@@ -46,6 +48,17 @@ function IconContainer() {
 				/>
 				<p className="icon-container__text icon-container__text--js">
 					JavaScript
+				</p>
+			</figure>
+
+			<figure className="icon-container__logo">
+				<img
+					src={typescriptIcon}
+					alt="Docker Icon"
+					className="icon-container__icon"
+				/>
+				<p className="icon-container__text icon-container__text--typescript">
+					Typescript
 				</p>
 			</figure>
 
@@ -123,6 +136,17 @@ function IconContainer() {
 				/>
 				<p className="icon-container__text icon-container__text--aws">
 					AWS
+				</p>
+			</figure>
+
+			<figure className="icon-container__logo">
+				<img
+					src={azureIcon}
+					alt="Docker Icon"
+					className="icon-container__icon"
+				/>
+				<p className="icon-container__text icon-container__text--azure">
+					Azure
 				</p>
 			</figure>
 
