@@ -1,12 +1,12 @@
 .icon-container {
-	display: flex;
-	margin-top: 2rem;
-	position: absolute;
-	align-items: center;
-	justify-content: center;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 2rem 1rem;
+	/* margin-top: 2rem; */
 	overflow: visible;
-	gap: 0.2rem;
+	width: 95%;
+	max-width: 1024px;
+	margin-inline: auto;
 }
 
 .icon-container,
@@ -21,7 +21,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 0rem 1.8rem 0rem 1.8rem;
+	margin: 0rem 2rem 0rem 2rem;
 	height: 8rem; /*større for å se tekst under*/
 }
 
@@ -237,6 +237,23 @@
 	}
 }
 
+.icon-container__logo:hover .icon-container__text--azure {
+	display: inline-block;
+	color: rgb(240, 240, 240);
+	animation:
+		typing-azure 0.4s steps(5, end),
+		blink 0.4s step-end infinite alternate;
+}
+
+@keyframes typing-azure {
+	from {
+		width: 0ch;
+	}
+	to {
+		width: 6ch;
+	}
+}
+
 .icon-container__logo:hover .icon-container__text--git {
 	display: inline-block;
 	animation:
@@ -269,9 +286,22 @@
 	}
 }
 
-/* ============================== */
-/* RESPONSIVE ADJUSTMENTS */
-/* ============================== */
+.icon-container__logo:hover .icon-container__text--docker {
+	display: inline-block;
+	color: rgb(240, 240, 240);
+	animation:
+		typing-docker 0.4s steps(5, end),
+		blink 0.4s step-end infinite alternate;
+}
+
+@keyframes typing-docker {
+	from {
+		width: 0ch;
+	}
+	to {
+		width: 7ch;
+	}
+}
 
 /* Medium screens (tablets) */
 @media (max-width: 1024px) {
@@ -280,7 +310,8 @@
 		justify-content: center;
 		padding: 0 1rem;
 		gap: 1rem;
-		position: relative; /* prevent overlap issues */
+		position: relative;
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	.icon-container__logo {
@@ -297,6 +328,23 @@
 		gap: 1rem;
 		position: relative;
 		padding: 0 1rem;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.5rem 0.5rem;
+	}
+
+	.intro_screen__title {
+		margin: 0;
+		padding: 0;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.intro_screen__subtitle {
+		text-align: center;
+		top: 3rem;
+		right: 0rem;
+		font-size: 1rem;
+		position: relative;
 	}
 
 	.icon-container__logo {
@@ -311,12 +359,30 @@
 
 /* Extra small screens */
 @media (max-width: 480px) {
+	.intro_screen__title {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.intro_screen__subtitle {
+		text-align: center;
+		top: 3rem;
+		right: 0;
+		font-size: 1rem;
+		position: relative;
+	}
+
 	.icon-container {
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 0.8rem;
 		padding: 0 1rem;
 		position: relative;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.5rem 0.5rem;
 	}
 
 	.icon-container__logo {
@@ -330,5 +396,16 @@
 
 	.icon-container {
 		gap: 2rem;
+	}
+
+	.icon-container__other lord-icon {
+		width: 55px !important;
+		height: 55px !important;
+	}
+
+	.icon-container__contact lord-icon {
+		width: 55px !important;
+		height: 55px !important;
+		flex-direction: column;
 	}
 }

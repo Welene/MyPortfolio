@@ -2,15 +2,15 @@ import Main from './components/Main';
 import React from 'react';
 import Stars from './components/Stars';
 import Top from './components/Arrow/Arrow';
-import BoinkName from './components/Boink';
+// import BoinkName from './components/Boink';
 
 function App() {
 	return (
 		<>
 			<header id="intro" className="intro_screen">
-				<h1 className="intro_screen__title">
+				{/* <h1 className="intro_screen__title">
 					<BoinkName />
-				</h1>
+				</h1> */}
 			</header>
 			<div className="parallax_wrapper">
 				<Stars count={700} />

@@ -16,44 +16,35 @@ body {
 	overflow-x: clip;
 }
 
-.intro_screen {
-	position: relative;
-	width: 100%;
-}
-
+/* INTRO HEADING NAME + TITLE */
 .intro_screen__title {
 	font-size: 2.5rem;
+	margin-top: 2rem;
+	letter-spacing: 0.3rem;
 	font-family: Candal, serif;
 	border-radius: 0.3rem;
-	padding: 1rem 5rem 5rem 1rem;
-	position: absolute;
-	top: 10rem;
-	right: 7rem;
 	color: rgb(240, 240, 240);
 	filter: drop-shadow(0 10px 4px rgba(0, 0, 0, 0.514));
-	transform: rotate(-8deg);
+	text-align: center;
 }
 
 .intro_screen__subtitle {
 	font-size: 1.3rem;
 	font-family: Candal, serif;
+	margin-top: 2rem;
 	color: rgb(240, 240, 240);
-	position: absolute;
-	top: 15rem;
-	left: 10rem;
 }
 
 .boink-name {
 	display: inline-block;
-	animation: boink 0.6s ease-in-out;
-	animation-delay: 0.8s;
+	animation: boink 0.7s ease-in-out;
+	animation-delay: 0.6s;
 	animation-fill-mode: backwards;
 }
 
 .boink-name-sub {
-	display: inline-block;
-	animation: boink-rotated 0.5s ease-out;
-	animation-delay: 1.8s;
+	animation: boink-xs 0.7s ease-in-out;
+	animation-delay: 1.2s;
 	animation-fill-mode: both;
 }
 
@@ -62,22 +53,22 @@ body {
 		transform: scale(0);
 	}
 	70% {
-		transform: scale(1.4);
+		transform: scale(1.1);
 	}
 	100% {
 		transform: scale(1);
 	}
 }
 
-@keyframes boink-rotated {
+@keyframes boink-xs {
 	0% {
-		transform: rotate(8deg) scale(0);
+		transform: scale(0);
 	}
 	70% {
-		transform: rotate(8deg) scale(1.2);
+		transform: scale(1.1);
 	}
 	100% {
-		transform: rotate(8deg) scale(1);
+		transform: scale(1);
 	}
 }
 
@@ -136,6 +127,13 @@ main {
 	position: relative;
 }
 
+.mainContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .project-section {
 	width: 100%;
 	position: relative;
@@ -143,16 +141,20 @@ main {
 
 /* HEADER SECTION WITH PICTURE */
 .intro_screen {
-	position: relative;
 	height: 45rem;
+	width: 100%;
+
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 	/* background-image: url('./assets/meg4.png'); */
 	background-image: url('./assets/megmount.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+
 	filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.56));
 	font-family:
 		system-ui,
@@ -173,6 +175,7 @@ main {
 	display: flex;
 	justify-content: center;
 	position: relative;
+	width: 100%;
 }
 
 .parallax_group {
@@ -546,7 +549,6 @@ lord-icon:hover {
 	.intro_screen__title {
 		margin-top: 10rem;
 		white-space: normal;
-		padding: 5rem;
 		line-height: 1.3;
 	}
 

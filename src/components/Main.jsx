@@ -26,6 +26,7 @@ import projectI from '../assets/projects/admin5.png';
 import projectJ from '../assets/projects/admin1b.png';
 
 import { motion } from 'motion/react';
+import BoinkName from './Boink';
 
 const Spacer = ({ height = '1rem' }) => <div style={{ height }} />;
 
@@ -58,9 +59,20 @@ function Main() {
 	return (
 		<main className="mainContainer">
 			{/* INTRO SECTION ----------------------------------------------------------------------------------------------------------------------------------------- */}
-			<div className="intro-section__icons">
+
+			<h1 className="intro_screen__title">
+				<BoinkName />
+			</h1>
+
+			<motion.div
+				className="intro-section__icons"
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1, scale: 1.1 }}
+				transition={{ duration: 3 }}
+				viewport={{ once: true, amount: 0.1 }}>
 				<IconContainer />
-			</div>
+			</motion.div>
+
 			<section className="intro-section">
 				<motion.div
 					className="top_layer"
@@ -73,16 +85,16 @@ function Main() {
 					}}
 					viewport={{ once: true, amount: 0.1 }}>
 					<Section
-						title="Hej! va trevligt att se dig här"
+						title="Hej, va trevligt att se dig här!"
 						text={
 							<>
 								Jag är en norskinflyttad tjej som har bott i
 								Sverige i några år.
 								<Spacer height="1rem" />
 								Som en kreativ själ bestämde jag mig för att
-								börja plugga Webbutveckling, ett val som var
+								börja plugga webbutveckling, ett val som var
 								100% rätt! Efter två år blev jag klar med
-								utbildningen i 2026.
+								utbildningen (2026).
 								<Spacer height="1rem" />
 								Jag är en positiv & glad person som gillar att
 								sprida glädje.
