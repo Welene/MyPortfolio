@@ -31,28 +31,104 @@ import BoinkName from './Boink';
 const Spacer = ({ height = '1rem' }) => <div style={{ height }} />;
 
 const projectPhotosPhone = [
-	project1,
-	project2,
-	// project3,
-	project4,
-	project5,
-	project6,
-	project7,
-	project8,
-	project9,
-	project10,
+	{
+		src: project1,
+		caption:
+			'Evenemangsresor - en tjänst som erbjuder skräddarsydda resor för olika evenemang',
+		alt: 'Bild av projekt 1',
+	},
+	{
+		src: project2,
+		caption: 'Beskrivning av projekt 2',
+		alt: 'Bild av projekt 2',
+	},
+	// { src: project3, caption: 'Beskrivning av projekt 3', alt: 'Bild av projekt 3' },
+	{
+		src: project4,
+		caption: 'Beskrivning av projekt 4',
+		alt: 'Bild av projekt 4',
+	},
+	{
+		src: project5,
+		caption: 'Beskrivning av projekt 5',
+		alt: 'Bild av projekt 5',
+	},
+	{
+		src: project6,
+		caption: 'Beskrivning av projekt 6',
+		alt: 'Bild av projekt 6',
+	},
+	{
+		src: project7,
+		caption: 'Beskrivning av projekt 7',
+		alt: 'Bild av projekt 7',
+	},
+	{
+		src: project8,
+		caption: 'NovaTech – översikt',
+		alt: 'Bild av NovaTech – översikt',
+	},
+	{
+		src: project9,
+		caption: 'NovaTech – detaljvy',
+		alt: 'Bild av NovaTech – detaljvy',
+	},
+	{
+		src: project10,
+		caption: 'NovaTech – funktion',
+		alt: 'Bild av NovaTech – funktion',
+	},
 ];
 
 const projectPhotosDesktop = [
-	projectE,
-	projectF,
-	projectG,
-	projectI,
-	projectJ,
-	projectA,
-	projectB,
-	projectC,
-	projectD,
+	{
+		src: projectE,
+		caption:
+			'Praktik Värmlandstrafik: Evenemangsresor - en tjänst där resenärer kan förhandsboka resor för olika evenemang & administrator kan handtera bokningar, evenemang & resor (https://evenemangsresor.varmlandstrafik.se/ )',
+		alt: 'Bild av Adminpanel – översikt',
+	},
+	{
+		src: projectF,
+		caption: 'Administrator kan söka upp kundens bokning & hantera dem',
+		alt: 'Bild av Adminpanel – hantering',
+	},
+	{
+		src: projectG,
+		caption: 'Administrator kan redigera detaljer för resor',
+		alt: 'Bild av Adminpanel – detaljvy',
+	},
+	{
+		src: projectI,
+		caption:
+			'Administrator kan skapa evenemang samt redigera eller ta bort dem',
+		alt: 'Bild av Adminpanel – funktion',
+	},
+	{
+		src: projectJ,
+		caption:
+			'Översikt över alla evenemang som finns & som administrator kan hantera',
+		alt: 'Bild av Adminpanel – vy',
+	},
+	{
+		src: projectA,
+		caption: 'Beskrivning av projekt A',
+		alt: 'Bild av projekt A',
+	},
+	{
+		src: projectB,
+		caption: 'Beskrivning av projekt B',
+		alt: 'Bild av projekt B',
+	},
+	{
+		src: projectC,
+		caption: 'Beskrivning av projekt C',
+		alt: 'Bild av projekt C',
+	},
+	{
+		src: projectD,
+		caption: 'Beskrivning av projekt D',
+		alt: 'Bild av projekt D',
+	},
 ];
 
 function Main() {
@@ -85,23 +161,24 @@ function Main() {
 					}}
 					viewport={{ once: true, amount: 0.1 }}>
 					<Section
-						title="Hej, va trevligt att se dig här!"
+						title="Hej, trevligt att se dig här!"
 						text={
 							<>
 								Jag är en norskinflyttad tjej som har bott i
 								Sverige i några år.
 								<Spacer height="1rem" />
 								Som en kreativ själ bestämde jag mig för att
-								börja plugga webbutveckling, ett val som var
-								100% rätt! Efter två år blev jag klar med
-								utbildningen (2026).
+								börja plugga webbutveckling på
+								Folkuniversitetet, ett val som var 100% rätt!
+								Efter två år blev jag klar med utbildningen
+								(2026).
 								<Spacer height="1rem" />
 								Jag är en positiv & glad person som gillar att
 								sprida glädje.
 								<Spacer height="1rem" />
 								Kanske får jag chansen att skapa något &
-								utvecklas vidare hos er, det skulle vara både en
-								ära & en glädje!
+								utvecklas vidare hos er, det skulle vara både
+								ett nöje & en ära!
 							</>
 						}
 					/>
@@ -123,13 +200,13 @@ function Main() {
 					title="Projekter"
 					text={
 						<>
-							Nedan kan du se exempel på projekt jag har arbetat
-							med under utbildningen. Jag har fått arbeta både
-							självständigt & i team.
+							Utbildningen är praktisk inriktad, jag har lärt mig
+							genom att göra, genom individuella- & teamprojekter.
+							Det har gett mig verklig, användbar erfarenhet &
+							utvecklat mig mycket, inte minst inom agilt arbete.
 							<Spacer height="1rem" />
-							Vi har lagt mycket fokus på teamarbete, vilket har
-							gjort att jag utvecklats mycket & lärt mig att bli
-							ett ännu bättre på agilt arbete!
+							Nedan kan du se exempel på projekt jag har arbetat
+							med under utbildningen.
 						</>
 					}
 				/>
@@ -179,7 +256,18 @@ function Main() {
 						}}
 						viewport={{ once: true, amount: 0.1 }}>
 						<article className="other-section__content">
-							<h3 className="other-section__heading">Annat</h3>
+							<motion.h3
+								className="other-section__heading"
+								style={{
+									overflow: 'hidden',
+									whiteSpace: 'nowrap',
+								}}
+								initial={{ width: 0 }}
+								whileInView={{ width: '6ch' }}
+								viewport={{ once: true, amount: 0.5 }}
+								transition={{ duration: 0.7, ease: 'linear' }}>
+								Annat
+							</motion.h3>
 						</article>
 
 						<figure className="icon-container__other">
@@ -196,7 +284,7 @@ function Main() {
 										}}></lord-icon>
 								</a>
 								<p className="icon-container__icon--info">
-									Besök mig @Github!
+									Besök min Github!
 								</p>
 							</div>
 
@@ -247,48 +335,72 @@ function Main() {
 						}}
 						viewport={{ once: true, amount: 0.1 }}>
 						<article className="contact-section__content">
-							<h3 className="contact-section__heading">
+							<motion.h3
+								className="contact-section__heading"
+								style={{
+									overflow: 'hidden',
+									whiteSpace: 'nowrap',
+								}}
+								initial={{ width: 0 }}
+								whileInView={{ width: '7ch' }}
+								viewport={{ once: true, amount: 0.5 }}
+								transition={{ duration: 0.7, ease: 'linear' }}>
 								Kontakt
-							</h3>
+							</motion.h3>
 							<p className="contact-section__txt">
 								Hör gärna av dig till mig:
 							</p>
 						</article>
 
 						<figure className="icon-container__contact">
-							<a href="mailto:helenetheo@live.no">
-								<lord-icon
-									src="./animated/email-ani.json"
-									trigger="hover"
-									style={{
-										width: '70px',
-										height: '70px',
-									}}></lord-icon>
-							</a>
+							<div className="icon-item">
+								<a href="mailto:helenetheo@live.no">
+									<lord-icon
+										src="./animated/email-ani.json"
+										trigger="hover"
+										style={{
+											width: '70px',
+											height: '70px',
+										}}></lord-icon>
+								</a>
+								<p className="icon-container__icon--info">
+									Mejl
+								</p>
+							</div>
 
-							<a
-								href="https://www.instagram.com/helenetheodorsen/"
-								target="_blank">
-								<lord-icon
-									src="./animated/inst-ani.json"
-									trigger="hover"
-									style={{
-										width: '70px',
-										height: '70px',
-									}}></lord-icon>
-							</a>
+							<div className="icon-item">
+								<a
+									href="https://www.instagram.com/helenetheodorsen/"
+									target="_blank">
+									<lord-icon
+										src="./animated/inst-ani.json"
+										trigger="hover"
+										style={{
+											width: '70px',
+											height: '70px',
+										}}></lord-icon>
+								</a>
+								<p className="icon-container__icon--info">
+									Instagram
+								</p>
+							</div>
 
-							<a
-								href="https://www.linkedin.com/in/helene-theodorsen-645a20311/"
-								target="_blank">
-								<lord-icon
-									src="./animated/link-ani.json"
-									trigger="hover"
-									style={{
-										width: '70px',
-										height: '70px',
-									}}></lord-icon>
-							</a>
+							<div className="icon-item">
+								<a
+									href="https://www.linkedin.com/in/helene-theodorsen-645a20311/"
+									target="_blank">
+									<lord-icon
+										src="./animated/link-ani.json"
+										trigger="hover"
+										style={{
+											width: '70px',
+											height: '70px',
+										}}></lord-icon>
+								</a>
+								<p className="icon-container__icon--info">
+									LinkedIn
+								</p>
+							</div>
 						</figure>
 					</motion.div>
 				</div>

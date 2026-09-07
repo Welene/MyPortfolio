@@ -1,10 +1,19 @@
 import './Article.css';
+import { motion } from 'framer-motion';
 
 function Article({ text, title }) {
 	// props so that you can have different and unique text on each of the Articles in Section.jsx
 	return (
 		<article className="article">
-			<h2 className="article_title">{title}</h2>
+			<motion.h2
+				className="article_title"
+				style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}
+				initial={{ width: 0 }}
+				whileInView={{ width: '30ch' }}
+				viewport={{ once: true, amount: 0.5 }}
+				transition={{ duration: 2, ease: 'linear' }}>
+				{title}
+			</motion.h2>
 			<section className="article_text">{text}</section>
 		</article>
 	);
