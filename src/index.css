@@ -558,6 +558,10 @@ lord-icon:hover {
 		margin-bottom: 1.5rem;
 	}
 
+	.icon-container {
+		margin-top: 6rem;
+	}
+
 	.icon-container__other {
 		margin: 0rem;
 	}

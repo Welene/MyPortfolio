@@ -154,11 +154,11 @@
 
 	.embla-desktop .embla__slide:first-child,
 	.embla-phone .embla__slide:first-child {
-		margin-left: calc(var(--slide-spacing) + 2.8rem);
+		margin-left: calc(var(--slide-spacing) + 3.8rem);
 	}
 	.embla-desktop .embla__slide:last-child,
 	.embla-phone .embla__slide:last-child {
-		margin-right: calc(var(--slide-spacing) + 2.8rem);
+		margin-right: calc(var(--slide-spacing) + 3.8rem);
 	}
 	.embla__slide__caption {
 		font-size: 0.85rem;
@@ -184,6 +184,8 @@
 
 	.embla__controls {
 		gap: 2rem;
+		margin-top: 0;
+		padding-bottom: 1rem;
 	}
 
 	.embla-desktop .embla__dots {
@@ -195,6 +197,8 @@
 	}
 	.embla__slide__caption {
 		font-size: 0.8rem;
+		padding-top: 2rem;
+		line-height: 1.5rem;
 		max-width: 22%;
 	}
 
