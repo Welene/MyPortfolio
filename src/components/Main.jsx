@@ -27,107 +27,130 @@ import projectJ from '../assets/projects/admin1b.png';
 
 import { motion } from 'motion/react';
 import BoinkName from './Boink';
+import { ExternalLink } from 'lucide-react';
 
 const Spacer = ({ height = '1rem' }) => <div style={{ height }} />;
 
 const projectPhotosPhone = [
 	{
 		src: project1,
-		caption:
-			'Evenemangsresor - en tjänst som erbjuder skräddarsydda resor för olika evenemang',
-		alt: 'Bild av projekt 1',
+		caption: 'Examinationsprojekt: app för matbeställning',
+		alt: 'App för matbeställning',
 	},
 	{
 		src: project2,
-		caption: 'Beskrivning av projekt 2',
-		alt: 'Bild av projekt 2',
+		caption: 'Examinationsprojekt: meny - lägga till, ta bort & sortera',
+		alt: 'Meny - lägga till, ta bort & sortera',
 	},
 	// { src: project3, caption: 'Beskrivning av projekt 3', alt: 'Bild av projekt 3' },
 	{
 		src: project4,
-		caption: 'Beskrivning av projekt 4',
-		alt: 'Bild av projekt 4',
+		caption: 'Examinationsprojekt: menyval i appen',
+		alt: 'Menyval i appen',
 	},
 	{
 		src: project5,
-		caption: 'Beskrivning av projekt 5',
-		alt: 'Bild av projekt 5',
+		caption: 'Examinationsprojekt: bekräftelse av beställning',
+		alt: 'Bekräftelse av beställning',
 	},
 	{
 		src: project6,
-		caption: 'Beskrivning av projekt 6',
-		alt: 'Bild av projekt 6',
+		caption: 'Examinationsprojekt: kvitto av beställning',
+		alt: 'Kvitto av beställning',
 	},
 	{
 		src: project7,
-		caption: 'Beskrivning av projekt 7',
-		alt: 'Bild av projekt 7',
+		caption: 'Examinationsprojekt: första React-projekt',
+		alt: 'Första React projekt',
 	},
 	{
 		src: project8,
-		caption: 'NovaTech – översikt',
-		alt: 'Bild av NovaTech – översikt',
+		caption:
+			'Examinationsprojekt (1 vecka):  - göra en egen AI-bot som svarar utifrån egen kontext',
+		alt: 'AI-bot som svarar utifrån egen kontext',
 	},
 	{
 		src: project9,
-		caption: 'NovaTech – detaljvy',
-		alt: 'Bild av NovaTech – detaljvy',
+		caption: 'Examinationsprojekt: svarar utifrån kontexten den har fått',
+		alt: 'Svarar utifrån kontexten',
 	},
 	{
 		src: project10,
-		caption: 'NovaTech – funktion',
-		alt: 'Bild av NovaTech – funktion',
+		caption: 'Examinationsprojekt: AI-bot med minne',
+		alt: 'AI-bot med minne',
 	},
 ];
 
 const projectPhotosDesktop = [
 	{
 		src: projectE,
-		caption:
-			'Praktik Värmlandstrafik: Evenemangsresor - en tjänst där resenärer kan förhandsboka resor för olika evenemang & administrator kan handtera bokningar, evenemang & resor (https://evenemangsresor.varmlandstrafik.se/ )',
-		alt: 'Bild av Adminpanel – översikt',
+		caption: (
+			<>
+				Praktik Värmlandstrafik:{' '}
+				<a
+					href="https://evenemangsresor.varmlandstrafik.se/"
+					target="_blank"
+					rel="noopener noreferrer"
+					style={{
+						display: 'inline-flex',
+						alignItems: 'center',
+						gap: '4px',
+						color: 'inherit',
+					}}>
+					Evenemangsresor
+					<ExternalLink size={14} aria-hidden="true" />
+				</a>{' '}
+				- en tjänst där resenärer kan förhandsboka resor för olika
+				evenemang & administratör kan hantera bokningar, evenemang &
+				resor
+			</>
+		),
+		alt: 'Adminpanel – översikt',
 	},
 	{
 		src: projectF,
-		caption: 'Administrator kan söka upp kundens bokning & hantera dem',
-		alt: 'Bild av Adminpanel – hantering',
+		caption:
+			'Praktik Värmlandstrafik: Evenemangsresor - administratör kan söka upp kundernas bokningar & hantera dem',
+		alt: 'Adminpanel – söka efter & hantera bokningar',
 	},
 	{
 		src: projectG,
-		caption: 'Administrator kan redigera detaljer för resor',
-		alt: 'Bild av Adminpanel – detaljvy',
+		caption:
+			'Praktik Värmlandstrafik: Evenemangsresor - administratör kan redigera detaljer för resor',
+		alt: 'Adminpanel – redigera resor',
 	},
 	{
 		src: projectI,
 		caption:
-			'Administrator kan skapa evenemang samt redigera eller ta bort dem',
-		alt: 'Bild av Adminpanel – funktion',
+			'Praktik Värmlandstrafik: Evenemangsresor - administratör kan skapa evenemang samt redigera eller ta bort dem',
+		alt: 'Adminpanel – skapa/redigera evenemang',
 	},
 	{
 		src: projectJ,
 		caption:
-			'Översikt över alla evenemang som finns & som administrator kan hantera',
-		alt: 'Bild av Adminpanel – vy',
+			'Praktik Värmlandstrafik: Evenemangsresor - översikt över alla evenemang som finns & som administratör kan hantera',
+		alt: 'Adminpanel – översikt över evenemang',
 	},
 	{
 		src: projectA,
-		caption: 'Beskrivning av projekt A',
-		alt: 'Bild av projekt A',
+		caption:
+			'Examinationsprojekt: filmdatabas - sök efter filmer, läs detaljer, lägg till i din favoritlista & se trailer',
+		alt: 'Filmdatabas med sökfunktion, detaljer, favoritlista & trailer',
 	},
 	{
 		src: projectB,
-		caption: 'Beskrivning av projekt B',
-		alt: 'Bild av projekt B',
+		caption: 'Examinationsprojekt: filmdatabas - sökresultat',
+		alt: 'Sökresultat med filmer',
 	},
 	{
 		src: projectC,
-		caption: 'Beskrivning av projekt C',
-		alt: 'Bild av projekt C',
+		caption: 'Examinationsprojekt: filmdatabas - personlig favoritlista',
+		alt: 'Personlig favoritlista',
 	},
 	{
 		src: projectD,
-		caption: 'Beskrivning av projekt D',
-		alt: 'Bild av projekt D',
+		caption: 'Examinationsprojekt: filmdatabas - detaljer för vald film',
+		alt: 'Detaljer av vald film',
 	},
 ];
 
