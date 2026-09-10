@@ -90,10 +90,26 @@
 	width: 2.5rem;
 	height: 2.5rem;
 	border-radius: 50%;
-	background-color: rgba(241, 241, 241, 0.527);
+	background-color: rgba(241, 241, 241, 0.85);
 	color: rgb(20, 20, 20);
 	filter: drop-shadow(0 8px 5px rgba(20, 20, 20, 0.666));
 	pointer-events: auto;
+	transition:
+		background-color 0.2s ease,
+		transform 0.2s ease;
+}
+
+.embla__button:hover:not(:disabled) {
+	background-color: rgb(241, 241, 241);
+}
+
+.embla__button:active:not(:disabled) {
+	animation: button-boink 0.35s ease;
+}
+
+.embla__button:disabled {
+	opacity: 0.3;
+	cursor: default;
 }
 
 .embla__button:disabled {
@@ -106,7 +122,6 @@
 	height: 1.1rem;
 }
 
-/* dots — stay below the image, normal flow */
 .embla__dots {
 	display: flex;
 	justify-content: center;
@@ -144,7 +159,6 @@
 	color: rgb(241, 241, 241);
 	text-align: center;
 	max-width: 50%;
-	margin: 0 auto;
 	filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.384));
 }
 
@@ -253,8 +267,8 @@
 	}
 
 	.embla-desktop .embla__buttons {
-		padding: 0 2rem;
-		top: 34%;
+		padding: 0 0rem;
+		top: 38%;
 	}
 
 	.embla-phone .embla__buttons {

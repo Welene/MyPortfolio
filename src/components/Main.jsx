@@ -100,9 +100,8 @@ const projectPhotosDesktop = [
 					Evenemangsresor
 					<ExternalLink size={14} aria-hidden="true" />
 				</a>{' '}
-				- en tjänst där resenärer kan förhandsboka resor för olika
-				evenemang & administratör kan hantera bokningar, evenemang &
-				resor
+				- en tjänst där resenärer kan förhandsboka resor för evenemang &
+				administratör kan hantera bokningar, evenemang & resor
 			</>
 		),
 		alt: 'Adminpanel – översikt',
