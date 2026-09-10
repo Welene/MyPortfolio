@@ -58,7 +58,7 @@ function IconContainer() {
 					className="icon-container__icon"
 				/>
 				<p className="icon-container__text icon-container__text--typescript">
-					Typescript
+					TypeScript
 				</p>
 			</figure>
 

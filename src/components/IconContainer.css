@@ -335,16 +335,19 @@
 	.intro_screen__title {
 		margin: 0;
 		padding: 0;
-		margin-left: 50%;
-		transform: translateX(-50%);
 	}
 
 	.intro_screen__subtitle {
 		text-align: center;
-		top: 3rem;
+		margin-top: 2.5rem;
 		right: 0rem;
-		font-size: 1rem;
-		position: relative;
+		font-size: 1.1rem;
+
+		overflow-wrap: break-word;
+		max-width: 75%;
+		text-align: center;
+		top: 3rem;
+		right: 0;
 	}
 
 	.icon-container__logo {
@@ -360,19 +363,7 @@
 /* Extra small screens */
 @media (max-width: 480px) {
 	.intro_screen__title {
-		margin: 0;
-		padding: 0;
 		text-align: center;
-		margin-left: 50%;
-		transform: translateX(-50%);
-	}
-
-	.intro_screen__subtitle {
-		text-align: center;
-		top: 3rem;
-		right: 0;
-		font-size: 1rem;
-		position: relative;
 	}
 
 	.icon-container {
@@ -392,6 +383,10 @@
 
 	.icon-container__icon {
 		width: 40px;
+	}
+
+	.icon-container__text {
+		font-size: 0.58rem;
 	}
 
 	.icon-container {

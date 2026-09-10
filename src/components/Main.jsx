@@ -159,9 +159,7 @@ function Main() {
 		<main className="mainContainer">
 			{/* INTRO SECTION ----------------------------------------------------------------------------------------------------------------------------------------- */}
 
-			<h1 className="intro_screen__title">
-				<BoinkName />
-			</h1>
+			<BoinkName />
 
 			<motion.div
 				className="intro-section__icons"

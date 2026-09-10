@@ -42,10 +42,17 @@ body {
 	animation-fill-mode: backwards;
 }
 
-.boink-name-sub {
+.boink-name__sub {
 	animation: boink-xs 0.7s ease-in-out;
 	animation-delay: 1.2s;
 	animation-fill-mode: both;
+}
+
+.boink-name__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
 }
 
 @keyframes boink {
@@ -469,8 +476,7 @@ lord-icon:hover {
 
 	.other-section,
 	.contact-section {
-		width: 100%;
-		max-width: 55rem;
+		max-width: 85%;
 		min-height: auto;
 		padding: 2rem 1rem;
 	}
@@ -544,6 +550,9 @@ lord-icon:hover {
 		margin-top: 10rem;
 		white-space: normal;
 		line-height: 1.3;
+		font-size: 1.5rem;
+		overflow-wrap: break-word;
+		max-width: 70%;
 	}
 
 	.other-section__heading {
@@ -559,7 +568,8 @@ lord-icon:hover {
 	}
 
 	.icon-container {
-		margin-top: 6rem;
+		margin-top: 8rem;
+		margin-bottom: 4rem;
 	}
 
 	.icon-container__other {
@@ -574,6 +584,10 @@ lord-icon:hover {
 	.icon-container__icon--other {
 		width: 2rem;
 		height: 2rem;
+	}
+
+	.icon-container__icon--info {
+		font-size: 1rem;
 	}
 
 	.outro_screen {
