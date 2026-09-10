@@ -59,32 +59,31 @@ const EmblaCarousel = (props) => {
 						</div>
 					))}
 				</div>
+
+				<div className="embla__buttons">
+					<PrevButton
+						onClick={onPrevButtonClick}
+						disabled={prevBtnDisabled}
+					/>
+					<NextButton
+						onClick={onNextButtonClick}
+						disabled={nextBtnDisabled}
+					/>
+				</div>
 			</div>
 
-			<div className="embla__controls">
-				<PrevButton
-					onClick={onPrevButtonClick}
-					disabled={prevBtnDisabled}
-				/>
-
-				<div className="embla__dots">
-					{scrollSnaps.map((_, index) => (
-						<DotButton
-							key={index}
-							onClick={() => onDotButtonClick(index)}
-							className={'embla__dot'.concat(
-								index === selectedIndex
-									? ' embla__dot--selected'
-									: '',
-							)}
-						/>
-					))}
-				</div>
-
-				<NextButton
-					onClick={onNextButtonClick}
-					disabled={nextBtnDisabled}
-				/>
+			<div className="embla__dots">
+				{scrollSnaps.map((_, index) => (
+					<DotButton
+						key={index}
+						onClick={() => onDotButtonClick(index)}
+						className={'embla__dot'.concat(
+							index === selectedIndex
+								? ' embla__dot--selected'
+								: '',
+						)}
+					/>
+				))}
 			</div>
 		</section>
 	);
