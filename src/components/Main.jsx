@@ -88,6 +88,7 @@ const projectPhotosDesktop = [
 			<>
 				Praktik Värmlandstrafik:{' '}
 				<a
+					className="caption__link"
 					href="https://evenemangsresor.varmlandstrafik.se/"
 					target="_blank"
 					rel="noopener noreferrer"

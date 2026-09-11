@@ -235,6 +235,10 @@
 }
 
 @media (max-width: 480px) {
+	.mid_layer--over {
+		padding-bottom: 0;
+	}
+
 	.embla.embla-desktop .embla__slide__img {
 		max-width: 320px;
 	}
@@ -265,8 +269,12 @@
 		flex-direction: column;
 		/* justify-content: center; */
 		justify-content: flex-start;
+		min-height: 8rem;
+	}
 
-		min-height: 10rem;
+	.caption__link {
+		display: flex;
+		justify-content: center;
 	}
 
 	.embla__button {
@@ -281,11 +289,15 @@
 
 	.embla-desktop .embla__buttons {
 		padding: 0 0rem;
-		top: 23%;
+		top: 24%;
 	}
 
 	.embla-phone .embla__buttons {
 		padding: 0 2.5rem;
-		top: 35%;
+		top: 42%;
+	}
+
+	.embla-phone .embla__slide__inner > .embla__slide__caption {
+		min-height: 1rem;
 	}
 }
