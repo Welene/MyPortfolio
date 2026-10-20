@@ -12,7 +12,15 @@ import Autoplay from 'embla-carousel-autoplay';
 
 const EmblaCarousel = (props) => {
 	const { slides = [], options, className = '' } = props;
-	const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
+
+	const [emblaRef, emblaApi] = useEmblaCarousel(
+		{
+			...options,
+			axis: 'y',
+			align: 'start',
+		},
+		[Autoplay()],
+	);
 
 	const onNavButtonClick = useCallback((emblaApi) => {
 		const autoplay = emblaApi?.plugins()?.autoplay;
@@ -65,25 +73,42 @@ const EmblaCarousel = (props) => {
 						onClick={onPrevButtonClick}
 						disabled={prevBtnDisabled}
 					/>
+					{/* loading bar for carousel / picture process */}
+					<div
+						className="embla__progress"
+						role="group"
+						aria-label="Carousel progress">
+						<span
+							className="embla__counter"
+							aria-live="polite"
+							aria-atomic="true">
+							{selectedIndex + 1} / {scrollSnaps.length}
+						</span>
+
+						<div
+							className="embla__progress-track"
+							role="progressbar"
+							aria-label="Slides viewed"
+							aria-valuemin={1}
+							aria-valuemax={scrollSnaps.length}
+							aria-valuenow={selectedIndex + 1}>
+							<div
+								className="embla__progress-fill"
+								style={{
+									width: `${
+										((selectedIndex + 1) /
+											scrollSnaps.length) *
+										100
+									}%`,
+								}}
+							/>
+						</div>
+					</div>
 					<NextButton
 						onClick={onNextButtonClick}
 						disabled={nextBtnDisabled}
 					/>
 				</div>
-			</div>
-
-			<div className="embla__dots">
-				{scrollSnaps.map((_, index) => (
-					<DotButton
-						key={index}
-						onClick={() => onDotButtonClick(index)}
-						className={'embla__dot'.concat(
-							index === selectedIndex
-								? ' embla__dot--selected'
-								: '',
-						)}
-					/>
-				))}
 			</div>
 		</section>
 	);

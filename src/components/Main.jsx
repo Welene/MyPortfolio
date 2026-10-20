@@ -363,7 +363,7 @@ function Main() {
 									whiteSpace: 'nowrap',
 								}}
 								initial={{ width: 0 }}
-								whileInView={{ width: '7ch' }}
+								whileInView={{ width: '8ch' }}
 								viewport={{ once: true, amount: 0.5 }}
 								transition={{ duration: 0.7, ease: 'linear' }}>
 								Kontakt
