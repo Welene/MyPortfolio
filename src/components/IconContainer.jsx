@@ -157,7 +157,7 @@ function IconContainer() {
 					className="icon-container__icon"
 				/>
 				<p className="icon-container__text icon-container__text--git">
-					Github
+					GitHub
 				</p>
 			</figure>
 			<figure className="icon-container__logo">
