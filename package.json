@@ -15,12 +15,15 @@
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "gsap": "^3.13.0",
+    "i18next": "^27.2.2",
+    "i18next-browser-languagedetector": "^8.3.1",
     "lord-icon-element": "^4.1.2",
     "lottie-web": "^5.13.0",
     "lucide-react": "^1.43.0",
     "motion": "^12.23.24",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-i18next": "^18.0.3",
     "uuid": "^11.1.0"
   },
   "devDependencies": {

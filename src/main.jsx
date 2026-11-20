@@ -4,11 +4,12 @@ import './index.css';
 import App from './App.jsx';
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
+import './i18n';
 
 defineElement(lottie.loadAnimation);
 
 createRoot(document.getElementById('root')).render(
 	<StrictMode>
 		<App />
-	</StrictMode>
+	</StrictMode>,
 );

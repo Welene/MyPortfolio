@@ -1,0 +1,111 @@
+{
+	"intro": {
+		"title": "Hej, trevligt att se dig här!",
+		"p1": "Jag är en norskinflyttad tjej som har bott i Sverige i några år.",
+		"p2": "Som en kreativ själ bestämde jag mig för att börja plugga webbutveckling på Folkuniversitetet, ett val som var 100% rätt! Efter två år blev jag klar med utbildningen (2026).",
+		"p3": "Jag är en positiv & glad person som gillar att sprida glädje.",
+		"p4": "Kanske får jag chansen att skapa något & utvecklas vidare hos er, det skulle vara både ett nöje & en ära!"
+	},
+	"projects": {
+		"title": "Projekt",
+		"p1": "Utbildningen är praktisk inriktad, jag har lärt mig genom att göra, genom individuella- & teamprojekter. Det har gett mig verklig, användbar erfarenhet & utvecklat mig mycket, inte minst inom agilt arbete.",
+		"p2": "Nedan kan du se exempel på projekt jag har arbetat med under utbildningen.",
+		"phone": {
+			"order": {
+				"caption": "Examinationsprojekt: app för matbeställning",
+				"alt": "App för matbeställning"
+			},
+			"menu": {
+				"caption": "Examinationsprojekt: meny - lägga till, ta bort & sortera",
+				"alt": "Meny - lägga till, ta bort & sortera"
+			},
+			"menuChoice": {
+				"caption": "Examinationsprojekt: menyval i appen",
+				"alt": "Menyval i appen"
+			},
+			"confirm": {
+				"caption": "Examinationsprojekt: bekräftelse av beställning",
+				"alt": "Bekräftelse av beställning"
+			},
+			"receipt": {
+				"caption": "Examinationsprojekt: kvitto av beställning",
+				"alt": "Kvitto av beställning"
+			},
+			"firstReact": {
+				"caption": "Examinationsprojekt: första React-projekt",
+				"alt": "Första React-projekt"
+			},
+			"aiBot": {
+				"caption": "Examinationsprojekt (1 vecka): göra en egen AI-bot som svarar utifrån egen kontext",
+				"alt": "AI-bot som svarar utifrån egen kontext"
+			},
+			"aiContext": {
+				"caption": "Examinationsprojekt: svarar utifrån kontexten den har fått",
+				"alt": "Svarar utifrån kontexten"
+			},
+			"aiMemory": {
+				"caption": "Examinationsprojekt: AI-bot med minne",
+				"alt": "AI-bot med minne"
+			}
+		},
+		"desktop": {
+			"admin": {
+				"captionPrefix": "Praktik Värmlandstrafik:",
+				"captionSuffix": "- en tjänst där resenärer kan förhandsboka resor för evenemang & administratör kan hantera bokningar, evenemang & resor",
+				"alt": "Adminpanel - översikt"
+			},
+			"adminSearch": {
+				"caption": "Praktik Värmlandstrafik: Evenemangsresor - administratör kan söka upp kundernas bokningar & hantera dem",
+				"alt": "Adminpanel - söka efter & hantera bokningar"
+			},
+			"adminEdit": {
+				"caption": "Praktik Värmlandstrafik: Evenemangsresor - administratör kan redigera detaljer för resor",
+				"alt": "Adminpanel - redigera resor"
+			},
+			"adminCreate": {
+				"caption": "Praktik Värmlandstrafik: Evenemangsresor - administratör kan skapa evenemang samt redigera eller ta bort dem",
+				"alt": "Adminpanel - skapa/redigera evenemang"
+			},
+			"adminEvents": {
+				"caption": "Praktik Värmlandstrafik: Evenemangsresor - översikt över alla evenemang som finns & som administratör kan hantera",
+				"alt": "Adminpanel - översikt över evenemang"
+			},
+			"movies": {
+				"caption": "Examinationsprojekt: filmdatabas - sök efter filmer, läs detaljer, lägg till i din favoritlista & se trailer",
+				"alt": "Filmdatabas med sökfunktion, detaljer, favoritlista & trailer"
+			},
+			"movieResults": {
+				"caption": "Examinationsprojekt: filmdatabas - sökresultat",
+				"alt": "Sökresultat med filmer"
+			},
+			"movieFavs": {
+				"caption": "Examinationsprojekt: filmdatabas - personlig favoritlista",
+				"alt": "Personlig favoritlista"
+			},
+			"movieDetails": {
+				"caption": "Examinationsprojekt: filmdatabas - detaljer för vald film",
+				"alt": "Detaljer av vald film"
+			}
+		}
+	},
+	"other": {
+		"title": "Annat",
+		"github": "Besök min Github!",
+		"githubLabel": "Besök min GitHub",
+		"art": "Kolla min artwork!",
+		"artLabel": "Kolla min artwork på Picflow",
+		"photo": "Eller mina foto!",
+		"photoLabel": "Kolla mina foto"
+	},
+	"contact": {
+		"title": "Kontakt",
+		"text": "Hör gärna av dig till mig:",
+		"email": "Mejl",
+		"emailLabel": "Skicka mejl till Helene Theodorsen",
+		"instagramLabel": "Besök mig på Instagram",
+		"linkedinLabel": "Besök mig på LinkedIn"
+	},
+	"lang": {
+		"switcherLabel": "Språk"
+	}
+}

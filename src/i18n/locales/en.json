@@ -1,0 +1,111 @@
+{
+	"intro": {
+		"title": "Hi, nice to see you here!",
+		"p1": "I'm a Norwegian girl who has lived in Sweden for a few years.",
+		"p2": "As a creative soul I decided to study web development at Folkuniversitetet, a choice that was 100% right! After two years I finished my education (2026).",
+		"p3": "I'm a positive and cheerful person who loves spreading joy.",
+		"p4": "Maybe I'll get the chance to create something and keep growing with you. It would be both a pleasure and an honour!"
+	},
+	"projects": {
+		"title": "Projects",
+		"p1": "The education is hands-on and I have learned by doing, through individual and team projects. It has given me real, useful experience and developed me a lot, not least in agile work.",
+		"p2": "Below you can see examples of projects I have worked on during my education.",
+		"phone": {
+			"order": {
+				"caption": "Exam project: food ordering app",
+				"alt": "Food ordering app"
+			},
+			"menu": {
+				"caption": "Exam project: menu - add, remove and sort",
+				"alt": "Menu - add, remove and sort"
+			},
+			"menuChoice": {
+				"caption": "Exam project: menu options in the app",
+				"alt": "Menu options in the app"
+			},
+			"confirm": {
+				"caption": "Exam project: order confirmation",
+				"alt": "Order confirmation"
+			},
+			"receipt": {
+				"caption": "Exam project: order receipt",
+				"alt": "Order receipt"
+			},
+			"firstReact": {
+				"caption": "Exam project: first React project",
+				"alt": "First React project"
+			},
+			"aiBot": {
+				"caption": "Exam project (1 week): build my own AI bot that answers based on its own context",
+				"alt": "AI bot that answers based on its own context"
+			},
+			"aiContext": {
+				"caption": "Exam project: answers based on the context it has been given",
+				"alt": "Answers based on the context"
+			},
+			"aiMemory": {
+				"caption": "Exam project: AI bot with memory",
+				"alt": "AI bot with memory"
+			}
+		},
+		"desktop": {
+			"admin": {
+				"captionPrefix": "Internship Värmlandstrafik:",
+				"captionSuffix": "- a service where travellers can pre-book trips to events and an administrator can manage bookings, events and trips",
+				"alt": "Admin panel - overview"
+			},
+			"adminSearch": {
+				"caption": "Internship Värmlandstrafik: Evenemangsresor - an administrator can look up customers' bookings and manage them",
+				"alt": "Admin panel - searching for and managing bookings"
+			},
+			"adminEdit": {
+				"caption": "Internship Värmlandstrafik: Evenemangsresor - an administrator can edit trip details",
+				"alt": "Admin panel - editing trips"
+			},
+			"adminCreate": {
+				"caption": "Internship Värmlandstrafik: Evenemangsresor - an administrator can create events and edit or remove them",
+				"alt": "Admin panel - creating and editing events"
+			},
+			"adminEvents": {
+				"caption": "Internship Värmlandstrafik: Evenemangsresor - overview of all events that an administrator can manage",
+				"alt": "Admin panel - overview of events"
+			},
+			"movies": {
+				"caption": "Exam project: movie database - search for movies, read details, add to your favourites list and watch trailers",
+				"alt": "Movie database with search, details, favourites list and trailers"
+			},
+			"movieResults": {
+				"caption": "Exam project: movie database - search results",
+				"alt": "Search results with movies"
+			},
+			"movieFavs": {
+				"caption": "Exam project: movie database - personal favourites list",
+				"alt": "Personal favourites list"
+			},
+			"movieDetails": {
+				"caption": "Exam project: movie database - details for the selected movie",
+				"alt": "Details of the selected movie"
+			}
+		}
+	},
+	"other": {
+		"title": "Other",
+		"github": "Visit my GitHub!",
+		"githubLabel": "Visit my GitHub",
+		"art": "Check out my artwork!",
+		"artLabel": "Check out my artwork on Picflow",
+		"photo": "Or my photos!",
+		"photoLabel": "Check out my photos"
+	},
+	"contact": {
+		"title": "Contact",
+		"text": "Feel free to get in touch:",
+		"email": "Email",
+		"emailLabel": "Send an email to Helene Theodorsen",
+		"instagramLabel": "Visit me on Instagram",
+		"linkedinLabel": "Visit me on LinkedIn"
+	},
+	"lang": {
+		"switcherLabel": "Language"
+	}
+}

@@ -2,6 +2,7 @@ import Section from '../components/Section';
 import IconContainer from './IconContainer';
 
 import EmblaCarousel from './EmblaCarousel';
+import LanguageSwitcher from './LanguageSwitcher';
 
 import project1 from '../assets/projects/1.png';
 import project2 from '../assets/projects/2.png';
@@ -28,136 +29,73 @@ import projectJ from '../assets/projects/admin1b.png';
 import { motion } from 'motion/react';
 import BoinkName from './Boink';
 import { ExternalLink } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Spacer = ({ height = '1rem' }) => <div style={{ height }} />;
 
-const projectPhotosPhone = [
-	{
-		src: project1,
-		caption: 'Examinationsprojekt: app för matbeställning',
-		alt: 'App för matbeställning',
-	},
-	{
-		src: project2,
-		caption: 'Examinationsprojekt: meny - lägga till, ta bort & sortera',
-		alt: 'Meny - lägga till, ta bort & sortera',
-	},
-	// { src: project3, caption: 'Beskrivning av projekt 3', alt: 'Bild av projekt 3' },
-	{
-		src: project4,
-		caption: 'Examinationsprojekt: menyval i appen',
-		alt: 'Menyval i appen',
-	},
-	{
-		src: project5,
-		caption: 'Examinationsprojekt: bekräftelse av beställning',
-		alt: 'Bekräftelse av beställning',
-	},
-	{
-		src: project6,
-		caption: 'Examinationsprojekt: kvitto av beställning',
-		alt: 'Kvitto av beställning',
-	},
-	{
-		src: project7,
-		caption: 'Examinationsprojekt: första React-projekt',
-		alt: 'Första React projekt',
-	},
-	{
-		src: project8,
-		caption:
-			'Examinationsprojekt (1 vecka):  - göra en egen AI-bot som svarar utifrån egen kontext',
-		alt: 'AI-bot som svarar utifrån egen kontext',
-	},
-	{
-		src: project9,
-		caption: 'Examinationsprojekt: svarar utifrån kontexten den har fått',
-		alt: 'Svarar utifrån kontexten',
-	},
-	{
-		src: project10,
-		caption: 'Examinationsprojekt: AI-bot med minne',
-		alt: 'AI-bot med minne',
-	},
-];
-
-const projectPhotosDesktop = [
-	{
-		src: projectE,
-		caption: (
-			<>
-				Praktik Värmlandstrafik:{' '}
-				<a
-					className="caption__link"
-					href="https://evenemangsresor.varmlandstrafik.se/"
-					target="_blank"
-					rel="noopener noreferrer"
-					style={{
-						display: 'inline-flex',
-						alignItems: 'center',
-						gap: '4px',
-						color: 'inherit',
-					}}>
-					Evenemangsresor
-					<ExternalLink size={14} aria-hidden="true" />
-				</a>{' '}
-				- en tjänst där resenärer kan förhandsboka resor för evenemang &
-				administratör kan hantera bokningar, evenemang & resor
-			</>
-		),
-		alt: 'Adminpanel – översikt',
-	},
-	{
-		src: projectF,
-		caption:
-			'Praktik Värmlandstrafik: Evenemangsresor - administratör kan söka upp kundernas bokningar & hantera dem',
-		alt: 'Adminpanel – söka efter & hantera bokningar',
-	},
-	{
-		src: projectG,
-		caption:
-			'Praktik Värmlandstrafik: Evenemangsresor - administratör kan redigera detaljer för resor',
-		alt: 'Adminpanel – redigera resor',
-	},
-	{
-		src: projectI,
-		caption:
-			'Praktik Värmlandstrafik: Evenemangsresor - administratör kan skapa evenemang samt redigera eller ta bort dem',
-		alt: 'Adminpanel – skapa/redigera evenemang',
-	},
-	{
-		src: projectJ,
-		caption:
-			'Praktik Värmlandstrafik: Evenemangsresor - översikt över alla evenemang som finns & som administratör kan hantera',
-		alt: 'Adminpanel – översikt över evenemang',
-	},
-	{
-		src: projectA,
-		caption:
-			'Examinationsprojekt: filmdatabas - sök efter filmer, läs detaljer, lägg till i din favoritlista & se trailer',
-		alt: 'Filmdatabas med sökfunktion, detaljer, favoritlista & trailer',
-	},
-	{
-		src: projectB,
-		caption: 'Examinationsprojekt: filmdatabas - sökresultat',
-		alt: 'Sökresultat med filmer',
-	},
-	{
-		src: projectC,
-		caption: 'Examinationsprojekt: filmdatabas - personlig favoritlista',
-		alt: 'Personlig favoritlista',
-	},
-	{
-		src: projectD,
-		caption: 'Examinationsprojekt: filmdatabas - detaljer för vald film',
-		alt: 'Detaljer av vald film',
-	},
-];
-
 function Main() {
+	const { t } = useTranslation();
+
+	// Hjelpefunksjon: gir {src, caption, alt} fra en nøkkel i JSON-filene
+	const slide = (src, key) => ({
+		src,
+		caption: t(`${key}.caption`),
+		alt: t(`${key}.alt`),
+	});
+
+	const projectPhotosPhone = [
+		slide(project1, 'projects.phone.order'),
+		slide(project2, 'projects.phone.menu'),
+		// slide(project3, 'projects.phone.xxx'),
+		slide(project4, 'projects.phone.menuChoice'),
+		slide(project5, 'projects.phone.confirm'),
+		slide(project6, 'projects.phone.receipt'),
+		slide(project7, 'projects.phone.firstReact'),
+		slide(project8, 'projects.phone.aiBot'),
+		slide(project9, 'projects.phone.aiContext'),
+		slide(project10, 'projects.phone.aiMemory'),
+	];
+
+	const projectPhotosDesktop = [
+		{
+			src: projectE,
+			caption: (
+				<>
+					{t('projects.desktop.admin.captionPrefix')}{' '}
+					<a
+						className="caption__link"
+						href="https://evenemangsresor.varmlandstrafik.se/"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{
+							display: 'inline-flex',
+							alignItems: 'center',
+							gap: '4px',
+							color: 'inherit',
+						}}>
+						Evenemangsresor
+						<ExternalLink size={14} aria-hidden="true" />
+					</a>{' '}
+					{t('projects.desktop.admin.captionSuffix')}
+				</>
+			),
+			alt: t('projects.desktop.admin.alt'),
+		},
+		slide(projectF, 'projects.desktop.adminSearch'),
+		slide(projectG, 'projects.desktop.adminEdit'),
+		slide(projectI, 'projects.desktop.adminCreate'),
+		slide(projectJ, 'projects.desktop.adminEvents'),
+		slide(projectA, 'projects.desktop.movies'),
+		slide(projectB, 'projects.desktop.movieResults'),
+		slide(projectC, 'projects.desktop.movieFavs'),
+		slide(projectD, 'projects.desktop.movieDetails'),
+	];
+
 	return (
 		<main className="mainContainer">
 			{/* INTRO SECTION ----------------------------------------------------------------------------------------------------------------------------------------- */}
+
+			<LanguageSwitcher />
 
 			<BoinkName />
 
@@ -182,24 +120,16 @@ function Main() {
 					}}
 					viewport={{ once: true, amount: 0.1 }}>
 					<Section
-						title="Hej, trevligt att se dig här!"
+						title={t('intro.title')}
 						text={
 							<>
-								Jag är en norskinflyttad tjej som har bott i
-								Sverige i några år.
+								{t('intro.p1')}
 								<Spacer height="1rem" />
-								Som en kreativ själ bestämde jag mig för att
-								börja plugga webbutveckling på
-								Folkuniversitetet, ett val som var 100% rätt!
-								Efter två år blev jag klar med utbildningen
-								(2026).
+								{t('intro.p2')}
 								<Spacer height="1rem" />
-								Jag är en positiv & glad person som gillar att
-								sprida glädje.
+								{t('intro.p3')}
 								<Spacer height="1rem" />
-								Kanske får jag chansen att skapa något &
-								utvecklas vidare hos er, det skulle vara både
-								ett nöje & en ära!
+								{t('intro.p4')}
 							</>
 						}
 					/>
@@ -218,16 +148,12 @@ function Main() {
 				}}
 				viewport={{ once: true, amount: 0.1 }}>
 				<Section
-					title="Projekter"
+					title={t('projects.title')}
 					text={
 						<>
-							Utbildningen är praktisk inriktad, jag har lärt mig
-							genom att göra, genom individuella- & teamprojekter.
-							Det har gett mig verklig, användbar erfarenhet &
-							utvecklat mig mycket, inte minst inom agilt arbete.
+							{t('projects.p1')}
 							<Spacer height="1rem" />
-							Nedan kan du se exempel på projekt jag har arbetat
-							med under utbildningen.
+							{t('projects.p2')}
 						</>
 					}
 				/>
@@ -278,16 +204,19 @@ function Main() {
 						viewport={{ once: true, amount: 0.1 }}>
 						<article className="other-section__content">
 							<motion.h3
+								key={t('other.title')}
 								className="other-section__heading"
 								style={{
 									overflow: 'hidden',
 									whiteSpace: 'nowrap',
 								}}
 								initial={{ width: 0 }}
-								whileInView={{ width: '6ch' }}
+								whileInView={{
+									width: `${t('other.title').length + 1}ch`,
+								}}
 								viewport={{ once: true, amount: 0.5 }}
 								transition={{ duration: 0.7, ease: 'linear' }}>
-								Annat
+								{t('other.title')}
 							</motion.h3>
 						</article>
 
@@ -296,7 +225,8 @@ function Main() {
 								<a
 									href="https://github.com/welene"
 									target="_blank"
-									aria-label="Besök min GitHub">
+									rel="noopener noreferrer"
+									aria-label={t('other.githubLabel')}>
 									<lord-icon
 										src="./animated/git-ani.json"
 										trigger="hover"
@@ -307,7 +237,7 @@ function Main() {
 										}}></lord-icon>
 								</a>
 								<p className="icon-container__icon--info">
-									Besök min Github!
+									{t('other.github')}
 								</p>
 							</div>
 
@@ -315,7 +245,8 @@ function Main() {
 								<a
 									href="https://moisaart.picflow.com/59p9zhzt82"
 									target="_blank"
-									aria-label="Kolla min artwork på Picflow">
+									rel="noopener noreferrer"
+									aria-label={t('other.artLabel')}>
 									<lord-icon
 										src="./animated/draw-ani.json"
 										trigger="hover"
@@ -326,7 +257,7 @@ function Main() {
 										}}></lord-icon>
 								</a>
 								<p className="icon-container__icon--info">
-									Kolla min artwork!
+									{t('other.art')}
 								</p>
 							</div>
 
@@ -334,7 +265,8 @@ function Main() {
 								<a
 									href="https://moisaart.picflow.com/xs2ltt0twg"
 									target="_blank"
-									aria-label="Kolla mina foto">
+									rel="noopener noreferrer"
+									aria-label={t('other.photoLabel')}>
 									<lord-icon
 										src="./animated/photo-ani.json"
 										trigger="hover"
@@ -345,7 +277,7 @@ function Main() {
 										}}></lord-icon>
 								</a>
 								<p className="icon-container__icon--info">
-									Eller mina foto!
+									{t('other.photo')}
 								</p>
 							</div>
 						</figure>
@@ -363,19 +295,22 @@ function Main() {
 						viewport={{ once: true, amount: 0.1 }}>
 						<article className="contact-section__content">
 							<motion.h3
+								key={t('contact.title')}
 								className="contact-section__heading"
 								style={{
 									overflow: 'hidden',
 									whiteSpace: 'nowrap',
 								}}
 								initial={{ width: 0 }}
-								whileInView={{ width: '8ch' }}
+								whileInView={{
+									width: `${t('contact.title').length + 1}ch`,
+								}}
 								viewport={{ once: true, amount: 0.5 }}
 								transition={{ duration: 0.7, ease: 'linear' }}>
-								Kontakt
+								{t('contact.title')}
 							</motion.h3>
 							<p className="contact-section__txt">
-								Hör gärna av dig till mig:
+								{t('contact.text')}
 							</p>
 						</article>
 
@@ -383,7 +318,7 @@ function Main() {
 							<div className="icon-item">
 								<a
 									href="mailto:helenetheo@live.no"
-									aria-label="Skicka mejl till Helene Theodorsen">
+									aria-label={t('contact.emailLabel')}>
 									<lord-icon
 										src="./animated/email-ani.json"
 										trigger="hover"
@@ -394,7 +329,7 @@ function Main() {
 										}}></lord-icon>
 								</a>
 								<p className="icon-container__icon--info">
-									Mejl
+									{t('contact.email')}
 								</p>
 							</div>
 
@@ -402,7 +337,8 @@ function Main() {
 								<a
 									href="https://www.instagram.com/helenetheodorsen/"
 									target="_blank"
-									aria-label="Besök mig på Instagram">
+									rel="noopener noreferrer"
+									aria-label={t('contact.instagramLabel')}>
 									<lord-icon
 										src="./animated/inst-ani.json"
 										trigger="hover"
@@ -421,7 +357,8 @@ function Main() {
 								<a
 									href="https://www.linkedin.com/in/helene-theodorsen-645a20311/"
 									target="_blank"
-									aria-label="Besök mig på LinkedIn">
+									rel="noopener noreferrer"
+									aria-label={t('contact.linkedinLabel')}>
 									<lord-icon
 										src="./animated/link-ani.json"
 										trigger="hover"
