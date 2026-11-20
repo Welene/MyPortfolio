@@ -91,7 +91,6 @@ const projectPhotosDesktop = [
 					className="caption__link"
 					href="https://evenemangsresor.varmlandstrafik.se/"
 					target="_blank"
-					alt="Evenemangsresor länk"
 					rel="noopener noreferrer"
 					style={{
 						display: 'inline-flex',
@@ -297,10 +296,11 @@ function Main() {
 								<a
 									href="https://github.com/welene"
 									target="_blank"
-									alt="GitHub icon">
+									aria-label="Besök min GitHub">
 									<lord-icon
 										src="./animated/git-ani.json"
 										trigger="hover"
+										aria-hidden="true"
 										style={{
 											width: '70px',
 											height: '70px',
@@ -315,10 +315,11 @@ function Main() {
 								<a
 									href="https://moisaart.picflow.com/59p9zhzt82"
 									target="_blank"
-									alt="Drawing icon">
+									aria-label="Kolla min artwork på Picflow">
 									<lord-icon
 										src="./animated/draw-ani.json"
 										trigger="hover"
+										aria-hidden="true"
 										style={{
 											width: '70px',
 											height: '70px',
@@ -333,10 +334,11 @@ function Main() {
 								<a
 									href="https://moisaart.picflow.com/xs2ltt0twg"
 									target="_blank"
-									alt="Photo icon">
+									aria-label="Kolla mina foto">
 									<lord-icon
 										src="./animated/photo-ani.json"
 										trigger="hover"
+										aria-hidden="true"
 										style={{
 											width: '70px',
 											height: '70px',
@@ -381,10 +383,11 @@ function Main() {
 							<div className="icon-item">
 								<a
 									href="mailto:helenetheo@live.no"
-									alt="Email icon">
+									aria-label="Skicka mejl till Helene Theodorsen">
 									<lord-icon
 										src="./animated/email-ani.json"
 										trigger="hover"
+										aria-hidden="true"
 										style={{
 											width: '70px',
 											height: '70px',
@@ -399,10 +402,11 @@ function Main() {
 								<a
 									href="https://www.instagram.com/helenetheodorsen/"
 									target="_blank"
-									alt="Instagram icon">
+									aria-label="Besök mig på Instagram">
 									<lord-icon
 										src="./animated/inst-ani.json"
 										trigger="hover"
+										aria-hidden="true"
 										style={{
 											width: '70px',
 											height: '70px',
@@ -417,10 +421,11 @@ function Main() {
 								<a
 									href="https://www.linkedin.com/in/helene-theodorsen-645a20311/"
 									target="_blank"
-									alt="LinkedIn icon">
+									aria-label="Besök mig på LinkedIn">
 									<lord-icon
 										src="./animated/link-ani.json"
 										trigger="hover"
+										aria-hidden="true"
 										style={{
 											width: '70px',
 											height: '70px',

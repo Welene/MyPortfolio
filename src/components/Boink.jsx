@@ -6,7 +6,7 @@ function BoinkName() {
 					<span className="boink-name">Helene Theodorsen</span>
 				</h1>
 				<p className="boink-name__sub intro_screen__subtitle">
-					Junior webbutvecklare
+					Junior fullstack-utvecklare
 				</p>
 			</div>
 		</>
