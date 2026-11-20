@@ -79,6 +79,7 @@
 	font-size: 1rem;
 	text-align: center;
 	filter: drop-shadow(0 0px 3px rgba(20, 20, 20, 0.384));
+	margin-bottom: 2rem;
 }
 
 .embla__buttons {
