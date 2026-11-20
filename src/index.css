@@ -61,7 +61,6 @@ body {
 	right: 1rem;
 	z-index: 100;
 	display: flex;
-	border: solid 1px white;
 	border-radius: 999px;
 	overflow: hidden;
 	backdrop-filter: blur(4px);
@@ -89,6 +88,15 @@ body {
 .language-switcher button:focus-visible {
 	outline: 2px solid #fff;
 	outline-offset: -4px;
+}
+
+.language-switcher::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	box-shadow: inset 0 0 0 1px #fff;
+	pointer-events: none;
 }
 
 @keyframes boink {
