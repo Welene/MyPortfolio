@@ -1,4 +1,10 @@
 {
+	"menu": {
+		"label": "Menu",
+		"home": "Home",
+		"projects": "Projects",
+		"skills": "Skills"
+	},
 	"intro": {
 		"title": "Hi, nice to see you here!",
 		"p1": "I'm a Norwegian girl who has lived in Sweden for several years. I started out in health care and cleaning and studied nursing while looking for the right path.",
@@ -51,23 +57,23 @@
 		"desktop": {
 			"admin": {
 				"captionPrefix": "Internship Värmlandstrafik:",
-				"captionSuffix": "- a service where travellers can pre-book trips to events and an administrator can manage bookings, events and trips",
+				"captionSuffix": "- a service where travellers can pre-book trips to events and an admin can manage bookings, events and trips",
 				"alt": "Admin panel - overview"
 			},
 			"adminSearch": {
-				"caption": "Internship Värmlandstrafik: Evenemangsresor - an administrator can look up customers' bookings and manage them",
+				"caption": "Internship Värmlandstrafik: Evenemangsresor - an admin can look up customers' bookings and manage them",
 				"alt": "Admin panel - searching for and managing bookings"
 			},
 			"adminEdit": {
-				"caption": "Internship Värmlandstrafik: Evenemangsresor - an administrator can edit trip details",
+				"caption": "Internship Värmlandstrafik: Evenemangsresor - an admin can edit trip details",
 				"alt": "Admin panel - editing trips"
 			},
 			"adminCreate": {
-				"caption": "Internship Värmlandstrafik: Evenemangsresor - an administrator can create events and edit or remove them",
+				"caption": "Internship Värmlandstrafik: Evenemangsresor - an admin can create events and edit or remove them",
 				"alt": "Admin panel - creating and editing events"
 			},
 			"adminEvents": {
-				"caption": "Internship Värmlandstrafik: Evenemangsresor - overview of all events that an administrator can manage",
+				"caption": "Internship Värmlandstrafik: Evenemangsresor - overview of all events that an admin can manage",
 				"alt": "Admin panel - overview of events"
 			},
 			"movies": {
@@ -107,5 +113,6 @@
 	},
 	"lang": {
 		"switcherLabel": "Language"
-	}
+	},
+	"common": { "toTop": "Back to top" }
 }

@@ -1,4 +1,10 @@
 {
+	"menu": {
+		"label": "Meny",
+		"home": "Hem",
+		"projects": "Projekt",
+		"skills": "Kompetens"
+	},
 	"intro": {
 		"title": "Hej, trevligt att se dig här!",
 		"p1": "Jag är en norskinflyttad tjej som har bott i Sverige i flera år. Jag har jobbat inom vård, omsorg och städning och studerat sjuksköterskeprogrammet medan jag letade efter rätt väg.",
@@ -51,23 +57,23 @@
 		"desktop": {
 			"admin": {
 				"captionPrefix": "Praktik Värmlandstrafik:",
-				"captionSuffix": "- en tjänst där resenärer kan förhandsboka resor för evenemang & administratör kan hantera bokningar, evenemang & resor",
+				"captionSuffix": "- en tjänst där resenärer kan förhandsboka resor för evenemang & admin kan hantera bokningar, evenemang & resor",
 				"alt": "Adminpanel - översikt"
 			},
 			"adminSearch": {
-				"caption": "Praktik Värmlandstrafik: Evenemangsresor - administratör kan söka upp kundernas bokningar & hantera dem",
+				"caption": "Praktik Värmlandstrafik: Evenemangsresor - admin kan söka upp kundernas bokningar & hantera dem",
 				"alt": "Adminpanel - söka efter & hantera bokningar"
 			},
 			"adminEdit": {
-				"caption": "Praktik Värmlandstrafik: Evenemangsresor - administratör kan redigera detaljer för resor",
+				"caption": "Praktik Värmlandstrafik: Evenemangsresor - admin kan redigera detaljer för resor",
 				"alt": "Adminpanel - redigera resor"
 			},
 			"adminCreate": {
-				"caption": "Praktik Värmlandstrafik: Evenemangsresor - administratör kan skapa evenemang samt redigera eller ta bort dem",
+				"caption": "Praktik Värmlandstrafik: Evenemangsresor - admin kan skapa evenemang samt redigera eller ta bort dem",
 				"alt": "Adminpanel - skapa/redigera evenemang"
 			},
 			"adminEvents": {
-				"caption": "Praktik Värmlandstrafik: Evenemangsresor - översikt över alla evenemang som finns & som administratör kan hantera",
+				"caption": "Praktik Värmlandstrafik: Evenemangsresor - översikt över alla evenemang som finns & som admin kan hantera",
 				"alt": "Adminpanel - översikt över evenemang"
 			},
 			"movies": {
@@ -107,5 +113,6 @@
 	},
 	"lang": {
 		"switcherLabel": "Språk"
-	}
+	},
+	"common": { "toTop": "Till toppen" }
 }

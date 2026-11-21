@@ -57,7 +57,7 @@
 
 .icon-container__logo:hover .icon-container__text {
 	display: inline-block;
-	color: rgb(240, 240, 240);
+	color: rgb(247, 247, 247);
 	animation: typing 0.6s steps(20, end);
 }
 

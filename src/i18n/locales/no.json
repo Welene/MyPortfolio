@@ -1,6 +1,12 @@
 {
+	"menu": {
+		"label": "Meny",
+		"home": "Hjem",
+		"projects": "Prosjekter",
+		"skills": "Kompetanse"
+	},
 	"intro": {
-		"title": "Hei, hyggelig å se deg her!",
+		"title": "Hei, så fint å se deg her!",
 		"p1": "Jeg er en norsk jente som har bodd i Sverige i flere år. Jeg har jobbet i helsevesenet og med renhold. Jeg har også studert sykepleie mens jeg lette etter min vei.",
 		"p2": "Som en kreativ sjel fant jeg til slutt ut at det var webutvikling jeg brant for. Folkuniversitetets webutviklingsprogram var et valg som var 100 % riktig! I dag er jeg nyutdannet fullstack-utvikler (2026).",
 		"p3": "Jeg er en positiv og glad person som liker å spre glede. Årene i helsevesenet har lært meg ansvar, tålmodighet og samarbeid.",
@@ -51,23 +57,23 @@
 		"desktop": {
 			"admin": {
 				"captionPrefix": "Praksis Värmlandstrafik:",
-				"captionSuffix": "- en tjeneste der reisende kan forhåndsbestille reiser til arrangementer og administratorer kan håndtere bestillinger, arrangementer og reiser",
+				"captionSuffix": "- en tjeneste der reisende kan forhåndsbestille reiser til arrangementer og admin kan håndtere bestillinger, arrangementer og reiser",
 				"alt": "Adminpanel - oversikt"
 			},
 			"adminSearch": {
-				"caption": "Praksis Värmlandstrafik: Evenemangsresor - administrator kan søke opp kundenes bestillinger og håndtere dem",
+				"caption": "Praksis Värmlandstrafik: Evenemangsresor - admin kan søke opp kundenes bestillinger og håndtere dem",
 				"alt": "Adminpanel - søke etter og håndtere bestillinger"
 			},
 			"adminEdit": {
-				"caption": "Praksis Värmlandstrafik: Evenemangsresor - administrator kan redigere detaljer for reiser",
+				"caption": "Praksis Värmlandstrafik: Evenemangsresor - admin kan redigere detaljer for reiser",
 				"alt": "Adminpanel - redigere reiser"
 			},
 			"adminCreate": {
-				"caption": "Praksis Värmlandstrafik: Evenemangsresor - administrator kan opprette arrangementer og redigere eller fjerne dem",
+				"caption": "Praksis Värmlandstrafik: Evenemangsresor - admin kan opprette arrangementer og redigere eller fjerne dem",
 				"alt": "Adminpanel - opprette og redigere arrangementer"
 			},
 			"adminEvents": {
-				"caption": "Praksis Värmlandstrafik: Evenemangsresor - oversikt over alle arrangementer som finnes og som administrator kan håndtere",
+				"caption": "Praksis Värmlandstrafik: Evenemangsresor - oversikt over alle arrangementer som finnes og som admin kan håndtere",
 				"alt": "Adminpanel - oversikt over arrangementer"
 			},
 			"movies": {
@@ -107,5 +113,6 @@
 	},
 	"lang": {
 		"switcherLabel": "Språk"
-	}
+	},
+	"common": { "toTop": "Til toppen" }
 }

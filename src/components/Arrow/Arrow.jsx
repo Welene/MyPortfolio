@@ -1,19 +1,20 @@
 import './Arrow.css';
 import ArrowIcon from '../../assets/icons/arrow-up.png';
 import useScrollToTop from '../../hooks/ScrollArrow';
+import { useTranslation } from 'react-i18next';
 
-function Top() {
+export default function Top() {
+	const { t } = useTranslation();
 	const { visible, scrollToTop } = useScrollToTop();
 	return (
 		<figure className="arrow__up">
-			<img
-				src={ArrowIcon}
-				alt="Arrow pointing up"
-				className={`scroll-arrow ${visible ? 'visible' : ''}`}
+			<button
+				type="button"
 				onClick={scrollToTop}
-			/>
+				aria-label={t('common.toTop')}
+				className={`scroll-arrow ${visible ? 'visible' : ''}`}>
+				<img src={ArrowIcon} alt="" />
+			</button>
 		</figure>
 	);
 }
-
-export default Top;

@@ -16,6 +16,17 @@ body {
 	overflow-x: clip;
 }
 
+#root {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.parallax_wrapper {
+	flex: 1;
+	width: 100%;
+}
+
 /* INTRO HEADING NAME + TITLE + LANG */
 .intro_screen__title {
 	font-size: 2.5rem;
@@ -33,13 +44,7 @@ body {
 	animation: boink 1s ease-in-out;
 	animation-delay: 0.6s;
 	animation-fill-mode: backwards;
-	margin-bottom: 5rem;
-}
-
-.boink-name__sub {
-	animation: boink-xs 1s ease-in-out;
-	animation-delay: 1.2s;
-	animation-fill-mode: both;
+	margin-bottom: 0rem;
 }
 
 .boink-name__container {
@@ -94,18 +99,6 @@ body {
 }
 
 @keyframes boink {
-	0% {
-		transform: scale(0);
-	}
-	70% {
-		transform: scale(1);
-	}
-	100% {
-		transform: scale(1);
-	}
-}
-
-@keyframes boink-xs {
 	0% {
 		transform: scale(0);
 	}
@@ -271,6 +264,17 @@ main {
 	gap: 15rem;
 }
 
+.carousel-box {
+	padding-block: 2rem;
+	border-radius: 3rem;
+	background: linear-gradient(to right, #750a18be, #501479be);
+	box-shadow: 8px 16px 16px hsla(0, 0%, 0%, 0.445);
+}
+
+.mid_layer--over {
+	height: auto;
+}
+
 /* ANNET SECTION */
 .other-section {
 	box-shadow: 8px 16px 16px hsla(0, 0%, 0%, 0.445);
@@ -400,7 +404,8 @@ main {
 
 /* // ----------------------------- BOTH */
 .other-section,
-.contact-section {
+.contact-section,
+.carousel-box {
 	width: 100%;
 	max-width: 55rem;
 	align-self: center;
@@ -491,13 +496,19 @@ lord-icon:hover {
 		padding: 0.8rem;
 	}
 
+	.mid_layer--over,
+	.mid_layer--under {
+		padding-inline: 0;
+	}
+
 	.mid_layer--under {
 		height: auto;
-		padding: 1rem;
+		padding: 1rem 0;
 	}
 
 	.other-section,
-	.contact-section {
+	.contact-section,
+	.carousel-box {
 		max-width: 85%;
 		min-height: auto;
 		padding: 2rem 1rem;
@@ -542,13 +553,21 @@ lord-icon:hover {
 
 /* super small screens */
 @media (max-width: 480px) {
+	.site-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.boink-name {
-		margin-bottom: 10rem;
-		margin-top: 5rem;
+		margin-bottom: 3rem;
+		margin-top: 2rem;
+		font-size: 1.8rem;
 	}
 
 	.other-section,
-	.contact-section {
+	.contact-section,
+	.carousel-box {
 		width: 100%;
 		max-width: 80%;
 		align-self: center;
@@ -567,6 +586,10 @@ lord-icon:hover {
 	.mid_layer--under {
 		margin-top: 8rem;
 		margin-bottom: 7rem;
+	}
+
+	.embla__progress {
+		margin-top: 6rem;
 	}
 
 	.intro_screen__title {
