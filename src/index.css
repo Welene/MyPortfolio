@@ -28,18 +28,12 @@ body {
 	text-align: center;
 }
 
-.intro_screen__subtitle {
-	font-size: 1.3rem;
-	font-family: Candal, serif;
-	margin-top: 2rem;
-	color: rgb(240, 240, 240);
-}
-
 .boink-name {
 	display: inline-block;
 	animation: boink 1s ease-in-out;
 	animation-delay: 0.6s;
 	animation-fill-mode: backwards;
+	margin-bottom: 5rem;
 }
 
 .boink-name__sub {
@@ -548,8 +542,9 @@ lord-icon:hover {
 
 /* super small screens */
 @media (max-width: 480px) {
-	.intro_screen__subtitle {
-		margin-top: 0;
+	.boink-name {
+		margin-bottom: 10rem;
+		margin-top: 5rem;
 	}
 
 	.other-section,

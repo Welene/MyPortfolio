@@ -1,11 +1,9 @@
 {
-	"hero": { "subtitle": "Junior fullstack developer" },
-
 	"intro": {
 		"title": "Hi, nice to see you here!",
-		"p1": "I'm a Norwegian girl who has lived in Sweden for a few years.",
-		"p2": "As a creative soul I decided to study web development at Folkuniversitetet, a choice that was 100% right! After two years I finished my education (2026).",
-		"p3": "I'm a positive and cheerful person who loves spreading joy.",
+		"p1": "I'm a Norwegian girl who has lived in Sweden for several years. I started out in health care and cleaning and studied nursing while looking for the right path.",
+		"p2": "As a creative soul I finally found out that web development was what I truly burned for. Folkuniversitetet's web developing program was 100% the right choice! Today I'm a newly graduated full-stack developer (2026).",
+		"p3": "I'm a positive and cheerful person who loves spreading joy. My years in care taught me responsibility, patience and teamwork.",
 		"p4": "Maybe I'll get the chance to create something and keep growing with you. It would be both a pleasure and an honour!"
 	},
 	"projects": {

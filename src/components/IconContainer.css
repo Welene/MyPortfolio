@@ -337,19 +337,6 @@
 		padding: 0;
 	}
 
-	.intro_screen__subtitle {
-		text-align: center;
-		margin-top: 2.5rem;
-		right: 0rem;
-		font-size: 1.1rem;
-
-		overflow-wrap: break-word;
-		max-width: 75%;
-		text-align: center;
-		top: 3rem;
-		right: 0;
-	}
-
 	.icon-container__logo {
 		margin: 0.5rem;
 		height: 6.5rem;

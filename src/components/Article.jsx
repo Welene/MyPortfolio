@@ -2,7 +2,6 @@ import './Article.css';
 import { motion } from 'framer-motion';
 
 function Article({ text, title }) {
-	// props so that you can have different and unique text on each of the Articles in Section.jsx
 	return (
 		<article className="article">
 			<motion.h2

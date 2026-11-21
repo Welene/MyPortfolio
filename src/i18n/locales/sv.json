@@ -1,11 +1,9 @@
 {
-	"hero": { "subtitle": "Junior fullstackutvecklare" },
-
 	"intro": {
 		"title": "Hej, trevligt att se dig här!",
-		"p1": "Jag är en norskinflyttad tjej som har bott i Sverige i några år.",
-		"p2": "Som en kreativ själ bestämde jag mig för att börja plugga webbutveckling på Folkuniversitetet, ett val som var 100% rätt! Efter två år blev jag klar med utbildningen (2026).",
-		"p3": "Jag är en positiv & glad person som gillar att sprida glädje.",
+		"p1": "Jag är en norskinflyttad tjej som har bott i Sverige i flera år. Jag har jobbat inom vård, omsorg och städning och studerat sjuksköterskeprogrammet medan jag letade efter rätt väg.",
+		"p2": "Som en kreativ själ upptäckte jag till slut att det var webbutveckling jag brann för. Folkuniversitetets webutvecklingsprogram var ett val som var 100% rätt! Idag är jag nyutexaminerad fullstackutvecklare (2026).",
+		"p3": "Jag är en positiv & glad person som gillar att sprida glädje. Åren inom vården har lärt mig ansvar, tålamod & samarbete.",
 		"p4": "Kanske får jag chansen att skapa något & utvecklas vidare hos er, det skulle vara både ett nöje & en ära!"
 	},
 	"projects": {

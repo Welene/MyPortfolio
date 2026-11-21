@@ -99,15 +99,6 @@ function Main() {
 
 			<BoinkName />
 
-			<motion.div
-				className="intro-section__icons"
-				initial={{ opacity: 0 }}
-				whileInView={{ opacity: 1, scale: 1.1 }}
-				transition={{ duration: 3 }}
-				viewport={{ once: true, amount: 0.1 }}>
-				<IconContainer />
-			</motion.div>
-
 			<section className="intro-section">
 				<motion.div
 					className="top_layer"
@@ -187,6 +178,15 @@ function Main() {
 					slides={projectPhotosPhone}
 					className="embla-phone"
 				/>
+			</motion.div>
+
+			<motion.div
+				className="intro-section__icons"
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1, scale: 1.1 }}
+				transition={{ duration: 3 }}
+				viewport={{ once: true, amount: 0.1 }}>
+				<IconContainer />
 			</motion.div>
 
 			{/* CONTACT/INFO SECTION -----------------------------------------------------------------------------------------------------------------------------------------  */}
