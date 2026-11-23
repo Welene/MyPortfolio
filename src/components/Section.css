@@ -43,5 +43,10 @@
 
 	.infoContainer > article {
 		padding: 1.5rem 1rem;
+		margin-bottom: 6rem;
+	}
+
+	.other-section {
+		margin-bottom: 2.5rem;
 	}
 }

@@ -16,7 +16,7 @@ const EmblaCarousel = (props) => {
 	const [emblaRef, emblaApi] = useEmblaCarousel(
 		{
 			...options,
-			axis: 'y',
+			axis: 'x',
 			align: 'start',
 		},
 		[Autoplay()],

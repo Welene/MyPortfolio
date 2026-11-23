@@ -579,13 +579,13 @@ lord-icon:hover {
 		gap: 5rem;
 	}
 
-	.mid_layer--over {
+	/* .mid_layer--over {
 		margin-top: 2rem;
-	}
+	} */
 
 	.mid_layer--under {
 		margin-top: 8rem;
-		margin-bottom: 7rem;
+		margin-bottom: 4rem;
 	}
 
 	.intro_screen__title {
@@ -610,8 +610,8 @@ lord-icon:hover {
 	}
 
 	.icon-container {
-		margin-top: 8rem;
-		margin-bottom: 4rem;
+		margin-top: 4rem;
+		margin-bottom: 3rem;
 	}
 
 	.icon-container__other {

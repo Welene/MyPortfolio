@@ -15,7 +15,7 @@
 
 .embla__container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	height: 100%;
 	margin: 0;
 	margin-top: calc(var(--slide-spacing) * -1);
@@ -257,7 +257,8 @@
 	}
 
 	.embla__slide__caption {
-		max-width: 80%;
+		max-width: 100%;
+		min-height: 8rem;
 		font-size: 0.8rem;
 		line-height: 1.5rem;
 	}
